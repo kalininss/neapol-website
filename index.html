@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Start header -->
+	<header class="header">
+
+		<div class="header__fixed">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<!-- Start fixed -->
+						<div class="fixed">
+
+							<div class="fixed__search">
+								<form class="search">
+									<input type="text" class="search__input" placeholder="Искать: например, торты">
+									<button class="button search__button"></button>
+								</form>
+							</div>
+
+							<div class="fixed__user-info">
+								<div class="user-info">
+									<div class="user-info__auth">
+										<a href="#" class="auth__login"><span class="icon icon__user"></span>Вход</a>
+										<span class="divide">|</span>
+										<a href="#" class="auth__registration">Регистрация</a>
+									</div>
+									<div class="user-info__compare">
+										<a href="#" class="compare">
+											<span class="icon icon__scale"></span>
+											Сравнение<span class="divide">|</span>7
+										</a>
+									</div>
+									<div class="user-info__cart">
+										<a href="#" class="cart">
+											<span class="icon icon__cart"></span>
+											Корзина<span class="divide">|</span>25 шт.
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- End fixed -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						
+						<div class="menu__logo">
+							<a href="#" class="logo-main"><img src="img/logo-main.jpg" alt="Логотип Неаполь"></a>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<nav class="menu__top">
+							<ul class="menu">
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">О компании</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши магазины</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Информация для покупателей</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Оплата и доставка</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши контакты</a></li>
+							</ul>
+						</nav>
+
+						<nav class="menu__bottom">
+							<ul class="menu">
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кондитерские изделия</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Изделия на заказ</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Хлебобулочные изделия</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кулинария</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Заказать на мероприятие</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- End header -->
+
+	<!-- Start front-page -->
+	<section class="front-page">
+
+		<div class="front-page__action">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						
+						<div class="slider main-slider" id="main-slider" style="position: relative; top: 0px; left: 0px; width: 656px; height: 385px;">
+							<!-- Slides Container -->
+							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 656px; height: 385px;">
+								<div><img alt="" data-u="image" src="img/big-slide-cake.jpg" /></div>
+								<div><img alt="" data-u="image" src="img/big-slide-cake.jpg" /></div>
+							</div>
+							<span data-u="arrowleft" class="arrow__left arrow" style="top: 180px; left: 20px;"></span>
+							<span data-u="arrowright" class="arrow__right arrow" style="top: 180px; right: 20px;"></span>
+							<div data-u="navigator" class="bullets" style="bottom: 15px; right: 17px;">
+								<div data-u="prototype"></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4">
+						
+						<div class="action">
+							<div class="action__inner">
+								<div class="action__decorate">
+									<div class="decorate__img"></div>
+									<h1 class="decorate__title">Торты на заказ</h1>
+									<h3 class="decorate__descr">Сконтструируй свой торт самостоятельно</h3>
+								</div>
+								<div class="action__white">
+									<h4 class="white__title">Это очень увлекательное действие. Почувствуй себя настоящим кулинаром!</h4>
+									<button class="btn">Старт</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="slider-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<!-- Start slider-newest -->
+						<div class="slider">
+							<a href="#" class="slider__title"><h2>Новинки</h2></a>
+
+							<div class="slider" id="slider-newest" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
+								<!-- Slides Container -->
+								<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 50%; margin-left: -500px; top: 0px; width: 1000px; height: 303px;">
+									
+									<div>
+										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
+										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+											<div class="slide__add-info">
+												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+												<span class="add-info__weight">выход 1120 гр.</span>
+												<span class="add-info__price">450 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
+										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+											<div class="slide__add-info">
+												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+												<span class="add-info__weight">выход 1120 гр.</span>
+												<span class="add-info__price">450 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
+										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+											<div class="slide__add-info">
+												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+												<span class="add-info__weight">выход 1120 гр.</span>
+												<span class="add-info__price">450 ₽</span>
+											</div>
+										</div>
+									</div>
+
+									<div>
+										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
+										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+											<div class="slide__add-info">
+												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+												<span class="add-info__weight">выход 1120 гр.</span>
+												<span class="add-info__price">450 ₽</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<span data-u="arrowleft" class="arrow__left arrow" style="top: 123px; left: 0px;"></span>
+								<span data-u="arrowright" class="arrow__right arrow" style="top: 125px; right: 0px;"></span>
+							</div>
+						</div>
+						<!-- End slider-newest -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- End front-page -->
+
+
+	<!-- Start front-content -->
+	<section class="front-content">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-12">
+					
+					<!-- Start slider-popular -->
+					<div class="slider">
+						<a href="#" class="slider__title"><h2>Популярные товары</h2></a>
+
+						<div class="slider slider__white-bg" id="slider-popular" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
+							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 50%; margin-left: -500px; top: 0px; width: 1000px; height: 303px;">
+
+								<div>
+									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
+									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+										<div class="slide__add-info">
+											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+											<span class="add-info__weight">выход 1120 гр.</span>
+											<span class="add-info__price">450 ₽</span>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
+									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+										<div class="slide__add-info">
+											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+											<span class="add-info__weight">выход 1120 гр.</span>
+											<span class="add-info__price">450 ₽</span>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
+									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+										<div class="slide__add-info">
+											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+											<span class="add-info__weight">выход 1120 гр.</span>
+											<span class="add-info__price">450 ₽</span>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
+									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
+										<div class="slide__add-info">
+											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
+											<span class="add-info__weight">выход 1120 гр.</span>
+											<span class="add-info__price">450 ₽</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<span data-u="arrowleft" class="arrow__left arrow" style="top: 123px; left: 0px;"></span>
+							<span data-u="arrowright" class="arrow__right arrow" style="top: 125px; right: 0px;"></span>
+						</div>
+					</div>
+					<!-- End slider-popular -->
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					
+					<div class="company-now">
+						<h2>Сегодня Неаполь Это</h2>
+						<p class="company-now__text">
+							Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, 
+							приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, 
+							духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. 
+							В «архитектуре» этой сладкой страны нет ничего «типового»: все изделия авторские, созданные под руководством шеф-кондитера ресторана Неаполь.
+						</p>
+						<div class="panel">
+							<h2>Уникальная возможность от Неаполь</h2>
+							<p>
+								Если Вам нужно организовать банкет целиком<br>
+								(и торт на заказ, и горячие блюда и прочее), то тогда это к нам.<br>
+								Оставьте заявку на звонок или свяжитесь с нашим<br>
+								менеджером, для обсуждения деталей заказа
+							</p>
+							<button class="btn btn_panel">Узнать подробности</button>
+							<div class="panel__mark"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-md-4">
+					
+					<div class="news">
+						<h2 class="news__title">Новости</h2>	
+						<div class="news__list">
+
+							<div class="news-compact">
+								<a href="#" class="news-compact__title">Скидка 5% при первичном заказе домашних пирогов</a>
+								<p class="news-compact__text">При заказе двух тортов одинакового размера вы получаете скидку в размере 5% от суммы покупки.</p>
+								<div class="news-compact__mark"></div>
+							</div>
+
+							<div class="news-compact">
+								<a href="#" class="news-compact__title">Скидка 5% при первичном заказе домашних пирогов</a>
+								<p class="news-compact__text">При заказе двух тортов одинакового размера вы получаете скидку в размере 5% от суммы покупки.</p>
+								<div class="news-compact__mark"></div>
+							</div>
+
+							<div class="news-compact">
+								<a href="#" class="news-compact__title">Скидка 5% при первичном заказе домашних пирогов</a>
+								<p class="news-compact__text">При заказе двух тортов одинакового размера вы получаете скидку в размере 5% от суммы покупки.</p>
+								<div class="news-compact__mark"></div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					
+					<!-- Start slider-testimonials -->
+					<div class="slider">
+						<a href="#" class="slider__title"><h2>Отзывы</h2></a>
+
+						<div class="slider" id="slider-testimonials" style="position: relative; top: -40px; left: 0px; width: 1000px; height: 180px; overflow: hidden;">
+							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; top: 0px; width: 1000px; height: 180px;">
+
+								<div>
+									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+										<div class="slide__add-info_testimonials">
+											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
+											<p class="add-info__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+										<div class="slide__add-info_testimonials">
+											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
+											<p class="add-info__text">Постоянно беру выпечку из Неаполя домой, очень выручает, особеннокогда приходят гости, а приходят они неожиданно и часто =) Всё очень вкусно, всегда всё свежее!</p>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+										<div class="slide__add-info_testimonials">
+											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
+											<p class="add-info__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+										</div>
+									</div>
+								</div>
+
+								<div>
+									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+										<div class="slide__add-info_testimonials">
+											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
+											<p class="add-info__text">Постоянно беру выпечку из Неаполя домой, очень выручает, особеннокогда приходят гости, а приходят они неожиданно и часто =) Всё очень вкусно, всегда всё свежее!</p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div data-u="navigator" class="bullets bullets_brown" style="top: 0; right: 0;">
+								<div data-u="prototype"></div>
+							</div>
+						</div>
+						<!-- End slider-testimonials -->
+
+						<button class="btn btn_testimonials">Оставить отзыв</button>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End front-content -->
+
+
+		<!-- Start footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+
+						<nav class="footer__category clearfix">
+							<div class="menu__left">
+								<ul class="menu">
+									<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
+								</ul>
+							</div>
+							
+							<div class="menu__right">
+								<ul class="menu">
+									<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+								</ul>
+							</div>
+						</nav>
+
+						<div class="footer__info">
+							<p>Новосибирск, Петухова, 63/2</p>
+							<p>+7 (383) 354-90-40  |  354-90-46</p>
+							<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
+							<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+
+							<nav class="footer__menu">
+									<ul class="menu">
+										<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+										<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+									</ul>
+							</nav>
+
+					</div>
+					<div class="col-md-3 md-non-padding">
+						<div class="footer__search">
+							<form class="search">
+									<input type="text" class="search__input" placeholder="Искать: например, торты">
+									<button class="button search__button"></button>
+								</form>
+						</div>
+						<div class="footer__social">
+							<p>Неаполь в социальных сетях:</p>
+							<a href="#" class="soc-icon soc-icon__vk"></a>
+							<a href="#" class="soc-icon soc-icon__fb"></a>
+						</div>
+						<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer -->
+
+		<div class="hidden"></div>
+
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
+	
+	<script src="js/common.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,514 @@
+/* Colors */
+$brown: #77282a
+$text: #806b6b
+$gold: #bf9f60
+$background: #f4f2ee
+
+/* Font-family */
+$title: "Cambria", sans-serif
+$regular: "OpenSansRegular", sans-serif
+$semibold: "OpenSansSemiBold", sans-serif
+$bold: "OpenSansBold", sans-serif
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: $regular
+	color: $text
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+h1, .h1 
+	font-size: 36px
+	font-family: $title
+	color: $brown
+h2, .h2
+	font-size: 30px
+	font-family: $title
+	font-weight: normal
+	margin: 10px 0
+	color: $brown
+h3, .h3 
+	font-size: 17px
+h4, .h4
+	font-size: 15px
+h5, .h5
+	font-size: 13px
+
+a
+	color: $brown
+	&:hover
+		color: $gold
+	&:focus
+		color: $brown
+	&:active
+		color: $brown
+
+a.reverse
+	color: $gold
+	&:hover
+		color: $brown
+	&:focus
+		color: $gold
+	&:active
+		color: $brown
+
+.header__fixed
+	background-color: $background
+	padding: 15px 0
+.search__input
+	background-color: transparent
+	border: none
+	width: 195px
+	height: 26px
+	&:focus
+		outline: none
+		background-color: #fff
+		border-radius: 3px
+.button
+	margin: 0
+	padding: 0
+	border: none
+.search__button
+	width: 42px
+	height: 26px
+	border-left: 1px solid
+	color: $gold
+	background-color: transparent
+	background-image: url(../img/sprite.png)
+	vertical-align: bottom
+	display: inline-block
+	background-position: -97px -26px
+	&:hover
+		background-position: -97px -1px
+		color: $gold
+	&:focus
+		outline: none
+.fixed__search 
+	float: left
+.fixed__user-info
+	float: right
+.user-info > div
+	display: inline-block
+	margin-left: 55px
+.icon
+	background-image: url(../img/sprite.png)
+	width: 18px
+	height: 18px
+	display: inline-block
+	vertical-align: top
+	margin-right: 6px
+	&__user
+		background-position: -135px -1px
+	&__scale
+		background-position: -79px -2px
+	&__cart
+		background-position: -79px -2px
+.divide
+	margin: 0 10px
+	display: inline-block
+	color: $brown
+.user-info a:hover
+	text-decoration: none
+.auth__login:hover .icon__user
+	background-position: -135px -27px
+.compare:hover .icon__scale
+	background-position: -79px -27px
+.cart:hover .icon__cart
+	background-position: -79px -27px
+.compare:hover .divide,
+.cart:hover .divide
+	color: $gold
+.menu__logo
+	float: left
+.menu__top,
+.menu__bottom
+	display: inline-block
+	float: right
+.menu
+	list-style-type: none
+	margin: 0
+	padding: 0
+.menu__link
+	display: inline-block
+	&:hover
+		text-decoration: none
+.top-menu__link
+	line-height: 52px
+	height: 52px
+	display: inline-block
+	border-bottom: 2px solid #eeebe6
+	padding: 0 13px
+	color: $text
+	font-size: 15px
+	font-family: $title
+	&:hover
+		color: $brown
+		border-color: $brown
+.menu__item:nth-child(1) .top-menu__link
+		padding-left: 0
+.menu__item:last-child .top-menu__link
+		padding-right: 0
+.menu__item
+	float: left
+	margin: 0
+	padding: 0
+.menu__bottom .menu__item
+	width: 20%
+.menu__bottom .menu__item:nth-child(1) .menu__link
+	padding-left: 0
+.menu__bottom .menu__item:nth-child(3) .menu__link
+	padding-left: 10%
+.bot-menu__link
+	height: 116px
+	font-size: 15px
+	font-family: $bold
+	padding-right: 22.5%
+	padding-left: 22.5%
+	padding-top: 31px
+.menu__bottom
+	padding-left: 7px
+.front-page
+	background-color: $background
+	padding: 26px 0 29px
+
+.arrow
+	position: absolute
+	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
+	cursor: pointer
+.bullets 
+	position: absolute
+            
+.bullets div, .bullets div:hover, .bullets .av 
+  position: relative
+  /* size of bullet elment */
+  width: 11px
+  height: 11px
+  overflow: hidden
+  cursor: pointer
+  border: 2px solid #fff
+
+          
+.bullets .av 
+	background-color: #fff
+
+.slider
+	.arrow
+		width: 18px
+		height: 30px
+	.arrow__right
+		background-position: -228px -6px
+	.arrow__left
+		background-position: -210px -6px
+	.arrow__left:hover
+		background-position: -171px -6px
+	.arrow__right:hover
+		background-position: -189px -6px
+
+.btn
+	text-transform: uppercase
+	padding: 0 40px
+	line-height: 40px
+	font-size: 16px
+	font-family: $bold
+	color: $brown
+	border: 2px solid $brown
+	background-color: transparent
+	transition: background-color 0.8s 0.1s ease
+	&:focus
+		outline: none
+
+.action
+	text-align: center
+	background-image: url(../img/background-rounds.jpg)
+	padding: 20px
+.action__inner
+	border: 2px solid #fff
+.action__white
+	background-color: #fff
+	padding: 13px 30px 15px
+.white__title
+	color: $brown
+	margin: 0 0 15px
+.action__decorate
+	color: #fff
+	padding-top: 9px
+.decorate__img	
+	background-image: url(../img/sprite.png)
+	width: 115px
+	height: 40px
+	margin: 0 auto
+	background-position: -134px -72px
+.decorate__title
+	line-height: 30px
+	margin-top: 15px
+	margin-bottom: 20px
+	font-size: 30px
+.decorate__descr
+	margin-bottom: 14px
+	margin-top: 0
+	font-family: $semibold
+.slide__add-info
+	width: 100%
+	border-top: 3px solid $background
+	border-bottom: 3px solid $gold
+	background-color: #fff
+	padding: 15px 20px
+	height: 96px
+.slider__img
+	width: 314px !important
+	height: 201px !important
+.add-info__name
+	float: left
+	margin-bottom: 5px
+	width: 50%
+	line-height: 18px
+	font-family: $semibold
+	&:hover
+		text-decoration: none
+		color: $gold
+.add-info__weight
+	float: left
+	font-family: $semibold
+	width: 100%
+.add-info__price
+	float: right
+	font-size: 26px
+	position: absolute
+	width: 100px
+	text-align: right
+	right: 25px
+	line-height: 26px
+	line-height: 45px
+.slider__link
+	background-color: rgba(151, 12, 48, .6)
+	padding: 24px 23px 23px
+	font-size: 18px
+	font-family: $semibold
+	text-align: center
+	line-height: 50px	
+	height: 201px
+	width: 314px
+	display: block
+	opacity: 0
+	&:hover
+		opacity: 1
+		text-decoration: none
+.more__hover
+	border: 2px solid #fff
+	height: 100%
+	color: #fff
+	text-decoration: none
+.cake_bg
+	background-image: url(../img/sprite.png)
+	background-position: 0 -61px
+	width: 66px
+	height: 66px
+	margin: 22px auto 0
+.slider-wrap
+	margin-top: 30px
+.slider__white-bg
+	.slide__add-info
+		background-color: $background
+.front-content
+	margin-top: 30px
+	margin-bottom: 70px
+.panel
+	text-align: center
+.slider__title
+	display: inline-block
+	&:hover
+		text-decoration: none
+		h2
+			color: $gold
+	h2
+		position: relative
+		z-index: 10
+.front-content
+	.slider:nth-child(1)
+		margin-bottom: 10px
+.company-now__text
+	font-size: 15px
+.panel
+	border: 2px solid $brown
+	padding: 25px 70px 43px
+.btn_panel
+	margin-top: 10px
+.panel__mark
+	width: 50px
+	height: 50px
+	background-color: #fff
+	position: absolute
+	left: 50%
+	margin-left: -25px
+	background-image: url(../img/sprite.png)
+	background-position: -73px -69px
+	bottom: -15px
+.news-compact__title
+	font-size: 16px
+	line-height: 20px
+	color: $gold
+	font-family: $semibold
+	text-decoration: underline
+	&:hover
+		color: $brown
+		text-decoration: underline
+.news-compact
+	border-bottom: 2px solid #d8d3cb
+	margin-bottom: 22px
+	position: relative
+.news-compact__mark
+	position: absolute
+	background-image: url(../img/sprite.png)
+	width: 32px
+	height: 18px
+	background-position: -239px -45px
+	bottom: -6px
+	left: 20%
+	background-color: #fff
+.news-compact__text
+	margin-bottom: 20px
+.company-now__text
+	margin-top: 16px
+	margin-bottom: 32px
+.add-info__full-name
+	font-family: $semibold
+	color: $brown
+	.icon__user
+		background-position: -139px -1px
+		margin-right: 3px
+
+.bullets_brown div, .bullets_brown div:hover, .bullets_brown .av 
+  border: 2px solid $brown
+.bullets_brown .av 
+	background-color: $brown
+.btn_testimonials
+	display: block
+	margin: 0 auto
+	padding: 0 80px
+.footer	
+	padding: 40px 0 45px
+	background-image: url(../img/background-rounds.jpg)
+	a
+		color: #eeebe6
+		font-size: 16px
+		font-family: $title
+		&:hover
+			color: $gold
+.footer__category
+	border-bottom: 2px solid #eeebe6
+	padding-bottom: 15px
+	.menu__item
+		display: block
+		width: 100%
+.menu__right
+	float: right
+	width: 50%	
+.menu__left
+	float: left
+	width: 50%
+.footer__info
+	margin-top: 10px
+	color: $gold
+	p
+		margin: 5px 0
+	a
+		color: $gold
+		&:hover
+			text-decoration: underline
+p.copyright
+	color: #eeebe6
+	margin-top: 10px
+.footer__menu
+	.menu__item
+		display: block
+		width: 100%
+		margin: 1px 0
+		&:nth-child(1)
+			margin-top: 0
+.footer__search
+	padding: 19px 17px
+	background-color: rgba(255,255,255,.4)
+	.search__input
+		width: 177px
+		color: $brown
+	.search__button
+		border-color: $brown
+		background-position: -97px -1px
+		&:hover
+			background-position: -97px -26px
+.md-non-padding
+	padding: 0
+.soc-icon	
+	width: 37px
+	height: 37px
+	background-color: #fff
+	display: inline-block
+	margin-right: 10px
+	background-image: url(../img/sprite.png)
+	&__vk
+		background-position: 12px 6px
+		&:hover
+			background-position: 12px -19px
+	&__fb
+		background-position: -12px 9px
+		&:hover
+			background-position: -12px -23px
+.footer__social
+	color: #eeebe6
+.footer__h2o
+	color: #eeebe6
+	margin-top: 7px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
