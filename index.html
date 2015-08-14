@@ -53,20 +53,20 @@
 							<div class="fixed__user-info">
 								<div class="user-info">
 									<div class="user-info__auth">
-										<a href="#" class="auth__login"><span class="icon icon__user"></span>Вход</a>
+										<a href="#" class="auth__login"><span class="icon icon__user"></span><span class="login__text">Вход</span></a>
 										<span class="divide">|</span>
-										<a href="#" class="auth__registration">Регистрация</a>
+										<a href="#" class="auth__registration"><span class="registration__text">Регистрация</span></a>
 									</div>
 									<div class="user-info__compare">
 										<a href="#" class="compare">
 											<span class="icon icon__scale"></span>
-											Сравнение<span class="divide">|</span>7
+											<span class="compare__text">Сравнение</span><span class="divide">|</span>7
 										</a>
 									</div>
 									<div class="user-info__cart">
 										<a href="#" class="cart">
 											<span class="icon icon__cart"></span>
-											Корзина<span class="divide">|</span>25 шт.
+											<span class="cart__text">Корзина</span><span class="divide">|</span>25 шт.
 										</a>
 									</div>
 								</div>
@@ -83,13 +83,10 @@
 		<div class="header__menu">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						
+						<div class="col-md-12">
 						<div class="menu__logo">
 							<a href="#" class="logo-main"><img src="img/logo-main.jpg" alt="Логотип Неаполь"></a>
 						</div>
-					</div>
-					<div class="col-md-9">
 						<nav class="menu__top">
 							<ul class="menu">
 								<li class="menu__item"><a class="menu__link top-menu__link" href="#">О компании</a></li>
@@ -170,13 +167,13 @@
 						<div class="slider">
 							<a href="#" class="slider__title"><h2>Новинки</h2></a>
 
-							<div class="slider" id="slider-newest" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
+							<div class="slider slider_carousel" id="slider-newest" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
 								<!-- Slides Container -->
 								<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 50%; margin-left: -500px; top: 0px; width: 1000px; height: 303px;">
 									
 									<div>
 										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
-										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -188,7 +185,7 @@
 
 									<div>
 										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
-										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -200,7 +197,7 @@
 
 									<div>
 										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
-										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -212,7 +209,7 @@
 
 									<div>
 										<img class="slider__img" alt="" src="img/common-slide-cake.jpg"/>
-										<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+										<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 											<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -249,12 +246,12 @@
 					<div class="slider">
 						<a href="#" class="slider__title"><h2>Популярные товары</h2></a>
 
-						<div class="slider slider__white-bg" id="slider-popular" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
+						<div class="slider slider_carousel slider__white-bg" id="slider-popular" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
 							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 50%; margin-left: -500px; top: 0px; width: 1000px; height: 303px;">
 
 								<div>
 									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
-									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+									<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 										<div class="slide__add-info">
 											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -266,7 +263,7 @@
 
 								<div>
 									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
-									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+									<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 										<div class="slide__add-info">
 											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -278,7 +275,7 @@
 
 								<div>
 									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
-									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+									<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 										<div class="slide__add-info">
 											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -290,7 +287,7 @@
 
 								<div>
 									<img class="slider__img" alt="" src="img/common-slide-cake-2.jpg"/>
-									<div data-u="caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
+									<div data-u="caption" class="slider__caption" style="position: absolute; top: 0px; left: 0; width: 313px; height: 303px;">
 										<a href="#" class="slider__link"><div class="more__hover"><div class="cake_bg"></div>подробнее</div></a>
 										<div class="slide__add-info">
 											<a href="#" class="add-info__name">Пирожные в корзиночках</a>
@@ -432,7 +429,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-4 right-padding-none">
 
 						<nav class="footer__category clearfix">
 							<div class="menu__left">
@@ -448,6 +445,8 @@
 									<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
 								</ul>
 							</div>
+
+							<div class="mark__white"></div>
 						</nav>
 
 						<div class="footer__info">
@@ -457,27 +456,27 @@
 							<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-4 md-non-padding">
 
-							<nav class="footer__menu">
-									<ul class="menu">
-										<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-										<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
-									</ul>
-							</nav>
+						<nav class="footer__menu">
+							<ul class="menu">
+								<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+							</ul>
+						</nav>
 
 					</div>
-					<div class="col-md-3 md-non-padding">
+					<div class="col-md-3 col-sm-4 md-non-padding">
 						<div class="footer__search">
 							<form class="search">
-									<input type="text" class="search__input" placeholder="Искать: например, торты">
-									<button class="button search__button"></button>
-								</form>
+								<input type="text" class="search__input" placeholder="Искать: например, торты">
+								<button class="button search__button"></button>
+							</form>
 						</div>
 						<div class="footer__social">
 							<p>Неаполь в социальных сетях:</p>
@@ -488,6 +487,7 @@
 					</div>
 				</div>
 			</div>
+			<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
 		</footer>
 		<!-- End footer -->
 

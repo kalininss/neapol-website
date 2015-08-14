@@ -93,10 +93,21 @@ a.reverse
 .header__fixed
 	background-color: $background
 	padding: 15px 0
+	position: relative
+.header__fixed.clone
+	position: fixed
+	transition: 0.5s top ease-in
+	top: -200px
+	width: 100%
+	z-index: 999
+	left: 0
+body.down .header__fixed.clone 
+	top: 0
+	box-shadow: 3px 3px 10px #bbb
 .search__input
 	background-color: transparent
 	border: none
-	width: 195px
+	width: 185px
 	height: 26px
 	&:focus
 		outline: none
@@ -140,7 +151,7 @@ a.reverse
 	&__scale
 		background-position: -79px -2px
 	&__cart
-		background-position: -79px -2px
+		background-position: -49px -2px
 .divide
 	margin: 0 10px
 	display: inline-block
@@ -152,7 +163,7 @@ a.reverse
 .compare:hover .icon__scale
 	background-position: -79px -27px
 .cart:hover .icon__cart
-	background-position: -79px -27px
+	background-position: -49px -27px
 .compare:hover .divide,
 .cart:hover .divide
 	color: $gold
@@ -205,6 +216,7 @@ a.reverse
 	padding-top: 31px
 .menu__bottom
 	padding-left: 7px
+	width: 74.3%
 .front-page
 	background-color: $background
 	padding: 26px 0 29px
@@ -252,7 +264,10 @@ a.reverse
 	color: $brown
 	border: 2px solid $brown
 	background-color: transparent
-	transition: background-color 0.8s 0.1s ease
+	transition: .2s linear
+	&:hover
+		background-color: $brown
+		color: #fff
 	&:focus
 		outline: none
 
@@ -281,6 +296,7 @@ a.reverse
 	line-height: 30px
 	margin-top: 15px
 	margin-bottom: 20px
+	color: #fff
 	font-size: 30px
 .decorate__descr
 	margin-bottom: 14px
@@ -436,12 +452,15 @@ a.reverse
 .footer__category
 	border-bottom: 2px solid #eeebe6
 	padding-bottom: 15px
+	position: relative
+	width: 86%
 	.menu__item
 		display: block
 		width: 100%
 .menu__right
 	float: right
 	width: 50%	
+	padding-left: 8%
 .menu__left
 	float: left
 	width: 50%
@@ -470,13 +489,19 @@ p.copyright
 	.search__input
 		width: 177px
 		color: $brown
+		&::-webkit-input-placeholder
+			color: $brown
+		&:-moz-placeholder
+			color: $brown
+		&::-moz-placeholder
+			color: $brown
+		&:-ms-input-placeholder
+			color: $brown
 	.search__button
 		border-color: $brown
 		background-position: -97px -1px
 		&:hover
 			background-position: -97px -26px
-.md-non-padding
-	padding: 0
 .soc-icon	
 	width: 37px
 	height: 37px
@@ -484,6 +509,7 @@ p.copyright
 	display: inline-block
 	margin-right: 10px
 	background-image: url(../img/sprite.png)
+	background-repeat: no-repeat
 	&__vk
 		background-position: 12px 6px
 		&:hover
@@ -497,15 +523,17 @@ p.copyright
 .footer__h2o
 	color: #eeebe6
 	margin-top: 7px
-
-
-
-
-
-
-
-
-
+.mark__white
+	position: absolute
+	width: 32px
+	height: 20px
+	background-image: url(../img/sprite.png)
+	background-position: -281px -45px
+	bottom: -10px
+	left: 8%
+.copyright_mobile
+	text-align: center
+	color: #eeebe6
 
 
 
