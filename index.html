@@ -21,6 +21,8 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -69,6 +71,7 @@
 											<span class="cart__text">Корзина</span><span class="divide">|</span>25 шт.
 										</a>
 									</div>
+									<a href="#" class="mobile-menu__button"></a>
 								</div>
 							</div>
 
@@ -83,24 +86,42 @@
 		<div class="header__menu">
 			<div class="container">
 				<div class="row">
-						<div class="col-md-12">
+					<div class="col-md-12">
 						<div class="menu__logo">
 							<a href="#" class="logo-main"><img src="img/logo-main.jpg" alt="Логотип Неаполь"></a>
 						</div>
 						<nav class="menu__top">
 							<ul class="menu">
-								<li class="menu__item"><a class="menu__link top-menu__link" href="#">О компании</a></li>
+								<div class="mobile-menu__title">Меню</div>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">О компании</a>
+									<ul class="submenu menu submenu_top">
+										<li class="submenu__item"><a href="#" class="submenu__link">Новости</a></li>
+										<li class="submenu__item"><a href="#" class="submenu__link">Отзывы</a></li>
+									</ul>
+								</li>
 								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши магазины</a></li>
 								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Информация для покупателей</a></li>
 								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Оплата и доставка</a></li>
 								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши контакты</a></li>
+								<div class="mobile-menu__exit"></div>
 							</ul>
 						</nav>
 
 						<nav class="menu__bottom">
+							<a href="#" class="mobile-menu_bottom">Ассортимент<span class="icon icon__arrow"></span></a>
 							<ul class="menu">
 								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кондитерские изделия</a></li>
-								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Изделия на заказ</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Изделия на заказ</a>
+									<ul class="submenu menu submenu_bottom">
+										<div class="submenu__list">
+											<li class="submenu__item"><a href="#" class="submenu__link">Пирожные</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Пироги</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Маффины</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Торты</a></li>	
+										</div>
+										<img src="../img/submenu-img.jpg" alt="" class="submenu__image">
+									</ul>
+								</li>
 								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Хлебобулочные изделия</a></li>
 								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кулинария</a></li>
 								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Заказать на мероприятие</a></li>
@@ -373,7 +394,7 @@
 							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; top: 0px; width: 1000px; height: 180px;">
 
 								<div>
-									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+									<div class="slide_testimonials" data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
 										<div class="slide__add-info_testimonials">
 											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
 											<p class="add-info__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
@@ -382,7 +403,7 @@
 								</div>
 
 								<div>
-									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+									<div class="slide_testimonials" data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
 										<div class="slide__add-info_testimonials">
 											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
 											<p class="add-info__text">Постоянно беру выпечку из Неаполя домой, очень выручает, особеннокогда приходят гости, а приходят они неожиданно и часто =) Всё очень вкусно, всегда всё свежее!</p>
@@ -391,7 +412,7 @@
 								</div>
 
 								<div>
-									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+									<div class="slide_testimonials" data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
 										<div class="slide__add-info_testimonials">
 											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
 											<p class="add-info__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
@@ -400,7 +421,7 @@
 								</div>
 
 								<div>
-									<div data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
+									<div class="slide_testimonials" data-u="image" style="position: absolute; top: 30px; left: 0; width: 310px; height: 140px;">
 										<div class="slide__add-info_testimonials">
 											<p class="add-info__full-name"><span class="icon icon__user"></span>Анастасия Свиридова, домохозяйка</p>
 											<p class="add-info__text">Постоянно беру выпечку из Неаполя домой, очень выручает, особеннокогда приходят гости, а приходят они неожиданно и часто =) Всё очень вкусно, всегда всё свежее!</p>
@@ -429,7 +450,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-sm-4 right-padding-none">
+					<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
 
 						<nav class="footer__category clearfix">
 							<div class="menu__left">
@@ -456,7 +477,7 @@
 							<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
 						</div>
 					</div>
-					<div class="col-md-3 col-sm-4 md-non-padding">
+					<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
 
 						<nav class="footer__menu">
 							<ul class="menu">
@@ -471,7 +492,7 @@
 						</nav>
 
 					</div>
-					<div class="col-md-3 col-sm-4 md-non-padding">
+					<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
 						<div class="footer__search">
 							<form class="search">
 								<input type="text" class="search__input" placeholder="Искать: например, торты">
@@ -509,6 +530,7 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	
 	<script src="js/common.js"></script>
 	

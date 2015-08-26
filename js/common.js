@@ -1,17 +1,52 @@
 $(document).ready(function() {
 
-	//fixed header
-	var $header = $(".header__fixed"),
+  //fixed header
+  var $header = $(".header__fixed"),
   $clone = $header.before($header.clone().addClass("clone"));
-	$(window).on("scroll", function() {
-		var fromTop = $(document).scrollTop();
+  $(window).on("scroll", function() {
+    var fromTop = $(document).scrollTop();
     $("body").toggleClass("down", (fromTop > 200));
   });
+
+  //Мобильное меню (гамбургер)
+  $(".mobile-menu__button").after( $(".menu__top").children(".menu").clone().addClass("clone-menu") );
+  $(".mobile-menu__button").click(function(){
+    $(".clone-menu").fadeIn();
+    return false;
+  });
+  $(".mobile-menu__exit").click(function(){
+    $(".clone-menu").fadeOut();
+  });
+  //Стрелка на мобильном ассортименте
+  $(".mobile-menu_bottom").click(function(){
+    $(this).toggleClass("rotate");
+    $(this).next().slideToggle(400);
+    return false;
+  });
+
+  //Кнопка поиска в шапке
+  if ( $(window).width() < 680 ) {
+    $(".fixed__search .search__button").click(function(){
+      if ( $(this).prev().width() == 0 ) {
+        $(this).animate({"right": "0px"}, 400).prev().animate({"width": "223px"}, 400).focus();
+
+        return false;
+      }
+    });
+    $(".fixed__search .search__input").blur(function(){
+      setTimeout(function(){
+        $(".fixed__search .search__input").animate({"width": "0"}, 400);
+      }, 100);
+      $(this).next().animate({"right": "-42px"}, 400);
+    });
+  }
 
 	/* ИНИЦИАЛИЗАЦИЯ СЛАЙДЕРОВ */
 	var SlideWidthCarousel; //ширина слайда в каруселях
 	var SlideSpacingCarousel;
 	var DisplayPiecesCarousel;
+  var DisplayPiecesTestimonials;
+  var SlideWidthTestimonials;
 
 	if ( $(window).width() < 480 ) {
 
@@ -24,10 +59,56 @@ $(document).ready(function() {
   		'width': '250px',
   		'margin-left': '-125px'
   	});
+    $(".slider__caption").css({
+      'width': '250px'
+    });
+    $(".slide_testimonials").css({
+      'width': '450px',
+      'top': '50px'
+    });
+    $("#slider-testimonials").css({
+      'width': '450px',
+      'height': '250px'
+    });
+    $("#slider-testimonials > div").css({
+      'width': '450px',
+      'height': '250px'
+    });
 
   	$SlideWidthCarousel = 250;
   	$SlideSpacingCarousel = 0;
   	$DisplayPiecesCarousel = 1;
+    $DisplayPiecesTestimonials = 1;
+    $SlideWidthTestimonials = 450;
+
+  } else if ( $(window).width() < 768 ) {
+
+    $(".slider_carousel").css({
+      'width': '691px',
+      'margin': '0 auto',
+      'left': '0'
+    });
+    $(".slider_carousel > div").css({
+      'width': '621px',
+      'margin-left': '-310px'
+    });
+    $(".slide_testimonials").css({
+      'width': '691px',
+      'top': '50px'
+    });
+    $("#slider-testimonials").css({
+      'width': '691px'
+    });
+    $("#slider-testimonials > div").css({
+      'width': '691px'
+    });
+
+    $SlideWidthCarousel = 303;      
+    $SlideSpacingCarousel = 15;
+    $DisplayPiecesCarousel = 2;
+    $DisplayPiecesTestimonials = 1;
+    $SlideWidthTestimonials = 691;
+
 
 	} else if ( $(window).width() < 992 ) {
 
@@ -40,10 +121,16 @@ $(document).ready(function() {
   		'width': '621px',
   		'margin-left': '-310px'
   	});
+    $(".slide_testimonials").css({
+      'width': '483px',
+      'top': '50px'
+    });
 
   	$SlideWidthCarousel = 303;
   	$SlideSpacingCarousel = 15;
   	$DisplayPiecesCarousel = 2;
+    $DisplayPiecesTestimonials = 2;
+    $SlideWidthTestimonials = 483;
 
 
 	} else if ( $(window).width() < 1200 ) {
@@ -66,20 +153,24 @@ $(document).ready(function() {
   	$SlideWidthCarousel = 303;
   	$SlideSpacingCarousel = 15;
   	$DisplayPiecesCarousel = 3;
+    $DisplayPiecesTestimonials = 3;
+    $SlideWidthTestimonials = 310;
 
 	} else {
 
 		$SlideWidthCarousel = 314;
 		$SlideSpacingCarousel = 29;
 		$DisplayPiecesCarousel = 3;
+    $DisplayPiecesTestimonials = 3;
+    $SlideWidthTestimonials = 310;
 
 	}
 
 	//Jssor slider: slider-testimonials
 	var options = { 
-		$AutoPlay: true,		
-		$SlideWidth: 310,				                
-		$DisplayPieces: 3,   
+		$AutoPlay: false,		
+		$SlideWidth: $SlideWidthTestimonials,				                
+		$DisplayPieces: $DisplayPiecesTestimonials,   
 		$SlideSpacing: 35,
 		$BulletNavigatorOptions: {
 			$Class: $JssorBulletNavigator$,
@@ -135,13 +226,10 @@ $(document).ready(function() {
   	if (parentWidth) {
   		main_slider.$ScaleWidth(parentWidth);
 			slider_testimonials.$ScaleWidth(parentWidthTestimonials);
-
-/*
-  		if ( $(window).width() < 1200 ) {
-				slider_newest.$ScaleWidth(parentWidthNewest);
-				slider_popular.$ScaleWidth(parentWidthPopular);
-  		}
-*/
+      if ( ($(window).width() > 479) && ($(window).width() < 769) ) {
+        slider_newest.$ScaleWidth(parentWidthNewest);
+        slider_popular.$ScaleWidth(parentWidthPopular);
+      }
   	}
   	else
   		window.setTimeout(ScaleSlider, 30);

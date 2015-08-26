@@ -5,7 +5,7 @@ $gold: #bf9f60
 $background: #f4f2ee
 
 /* Font-family */
-$title: "Cambria", sans-serif
+$title: "Cambria", serif
 $regular: "OpenSansRegular", sans-serif
 $semibold: "OpenSansSemiBold", sans-serif
 $bold: "OpenSansBold", sans-serif
@@ -92,7 +92,6 @@ a.reverse
 
 .header__fixed
 	background-color: $background
-	padding: 15px 0
 	position: relative
 .header__fixed.clone
 	position: fixed
@@ -106,13 +105,16 @@ body.down .header__fixed.clone
 	box-shadow: 3px 3px 10px #bbb
 .search__input
 	background-color: transparent
+	padding: 10px 0
 	border: none
-	width: 185px
-	height: 26px
+	line-height: 16px
 	&:focus
 		outline: none
 		background-color: #fff
-		border-radius: 3px
+.header__fixed .search__input
+	margin: 5px 0
+	width: 223px
+	height: 36px
 .button
 	margin: 0
 	padding: 0
@@ -120,6 +122,9 @@ body.down .header__fixed.clone
 .search__button
 	width: 42px
 	height: 26px
+	position: absolute
+	top: 10px
+	right: 0px
 	border-left: 1px solid
 	color: $gold
 	background-color: transparent
@@ -132,10 +137,14 @@ body.down .header__fixed.clone
 		color: $gold
 	&:focus
 		outline: none
+	&.alone
+		right: 0px
 .fixed__search 
 	float: left
+	position: relative
 .fixed__user-info
 	float: right
+	margin: 12px 0
 .user-info > div
 	display: inline-block
 	margin-left: 55px
@@ -193,13 +202,14 @@ body.down .header__fixed.clone
 	&:hover
 		color: $brown
 		border-color: $brown
-.menu__item:nth-child(1) .top-menu__link
+.menu__item:nth-of-type(1) .top-menu__link
 		padding-left: 0
-.menu__item:last-child .top-menu__link
+.menu__item:last-of-type .top-menu__link
 		padding-right: 0
 .menu__item
 	float: left
 	margin: 0
+	position: relative
 	padding: 0
 .menu__bottom .menu__item
 	width: 20%
@@ -484,11 +494,14 @@ p.copyright
 		&:nth-child(1)
 			margin-top: 0
 .footer__search
-	padding: 19px 17px
 	background-color: rgba(255,255,255,.4)
 	.search__input
-		width: 177px
+		width: 100%
+		height: 58px
+		line-height: 20px
+		padding: 19px 17px
 		color: $brown
+		border-radius: 0
 		&::-webkit-input-placeholder
 			color: $brown
 		&:-moz-placeholder
@@ -499,6 +512,9 @@ p.copyright
 			color: $brown
 	.search__button
 		border-color: $brown
+		position: absolute
+		top: 16px
+		right: 4px
 		background-position: -97px -1px
 		&:hover
 			background-position: -97px -26px
@@ -522,7 +538,7 @@ p.copyright
 	color: #eeebe6
 .footer__h2o
 	color: #eeebe6
-	margin-top: 7px
+	margin-top: 13px
 .mark__white
 	position: absolute
 	width: 32px
@@ -534,9 +550,98 @@ p.copyright
 .copyright_mobile
 	text-align: center
 	color: #eeebe6
-
-
-
-
-
-
+.submenu
+	position: absolute
+	z-index: 10
+	display: none
+	background-color: $background
+.submenu_bottom
+	border-top: 2px solid $gold
+	top: 100px
+	margin-left: 34px
+	box-shadow: 0 0 0 10px rgba(255,255,255,.4)
+	width: 440px
+.submenu_top
+	padding: 10px
+	border-bottom: 2px solid $background
+	width: 100%
+	.submenu__link
+		font-family: $title
+.submenu__image
+	float: right
+.submenu__list
+	float: left
+	width: 220px
+	padding-left: 20px
+	padding-top: 10px
+.submenu__item
+	font-size: 15px
+	font-family: $bold
+.submenu_bottom
+	.submenu__item
+		line-height: 30px
+.submenu__link:hover
+	text-decoration: none
+.mobile-menu__button 
+	display: none
+	width: 30px
+	height: 26px
+	background-image: url(../img/sprite.png)
+	background-position: -329px -6px 
+.mobile-menu_bottom 
+	display: none
+	width: 100%
+	font-size: 18px
+	text-decoration: none
+	padding: 10px 20px
+	background-color: $brown
+	text-align: left
+	&:active,
+	&:visited,
+	&:hover,
+	&:focus
+		color: $gold	
+		text-decoration: none
+.icon__arrow
+	background-position: 0 0
+	background-position: -283px -6px
+	height: 10px
+	float: right
+	margin-top: 9px
+.rotate .icon__arrow
+	background-position: -266px -6px
+.clone-menu
+	width: 100%
+	min-height: 100%
+	display: none
+	background-color: rgba(119,40,42,.9)
+	position: fixed
+	z-index: 999
+	left: 0
+	top: 0
+	.menu__item
+		display: block
+		width: 100%
+		text-align: center
+		a
+			color: #fff
+	.mobile-menu__title
+		display: block
+		text-align: center
+		font-size: 28px
+		font-family: $title
+		margin: 70px 0 15px
+		color: $gold
+	.mobile-menu__exit
+		display: block
+		position: absolute
+		height: 30px
+		width: 32px
+		top: 10px
+		right: 14px
+		background-image: url(../img/sprite.png)
+		background-position: -285px -87px
+.mobile-menu__title
+	display: none
+.mobile-menu__exit
+	display: none
