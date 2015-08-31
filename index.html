@@ -30,6 +30,15 @@
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	
+	<script src="js/common.js"></script>
+
 </head>
 
 <body>
@@ -444,79 +453,282 @@
 			</div>
 		</section>
 		<!-- End front-content -->
+		<script>
+			$(document).ready(function(){
+				/* ИНИЦИАЛИЗАЦИЯ СЛАЙДЕРОВ */
+				var SlideWidthCarousel; //ширина слайда в каруселях
+				var SlideSpacingCarousel;
+				var DisplayPiecesCarousel;
+				var DisplayPiecesTestimonials;
+				var SlideWidthTestimonials;
+
+				if ( $(window).width() < 480 ) {
+
+					$(".slider_carousel").css({
+						'width': '300px',
+						'margin': '0 auto',
+						'left': '-5px'
+					});
+					$(".slider_carousel > div").css({
+						'width': '250px',
+						'margin-left': '-125px'
+					});
+					$(".slider__caption").css({
+						'width': '250px'
+					});
+					$(".slide_testimonials").css({
+						'width': '450px',
+						'top': '50px'
+					});
+					$("#slider-testimonials").css({
+						'width': '450px',
+						'height': '250px'
+					});
+					$("#slider-testimonials > div").css({
+						'width': '450px',
+						'height': '250px'
+					});
+
+					$SlideWidthCarousel = 250;
+					$SlideSpacingCarousel = 0;
+					$DisplayPiecesCarousel = 1;
+					$DisplayPiecesTestimonials = 1;
+					$SlideWidthTestimonials = 450;
+
+				} else if ( $(window).width() < 768 ) {
+
+					$(".slider_carousel").css({
+						'width': '691px',
+						'margin': '0 auto',
+						'left': '0'
+					});
+					$(".slider_carousel > div").css({
+						'width': '621px',
+						'margin-left': '-310px'
+					});
+					$(".slide_testimonials").css({
+						'width': '691px',
+						'top': '50px'
+					});
+					$("#slider-testimonials").css({
+						'width': '691px'
+					});
+					$("#slider-testimonials > div").css({
+						'width': '691px'
+					});
+
+					$SlideWidthCarousel = 303;      
+					$SlideSpacingCarousel = 15;
+					$DisplayPiecesCarousel = 2;
+					$DisplayPiecesTestimonials = 1;
+					$SlideWidthTestimonials = 691;
 
 
-		<!-- Start footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+				} else if ( $(window).width() < 992 ) {
 
-						<nav class="footer__category clearfix">
-							<div class="menu__left">
-								<ul class="menu">
-									<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
-									<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
-								</ul>
-							</div>
-							
-							<div class="menu__right">
-								<ul class="menu">
-									<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
-									<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
-								</ul>
-							</div>
+					$(".slider_carousel").css({
+						'width': '691px',
+						'margin': '0 auto',
+						'left': '0'
+					});
+					$(".slider_carousel > div").css({
+						'width': '621px',
+						'margin-left': '-310px'
+					});
+					$(".slide_testimonials").css({
+						'width': '483px',
+						'top': '50px'
+					});
 
-							<div class="mark__white"></div>
-						</nav>
+					$SlideWidthCarousel = 303;
+					$SlideSpacingCarousel = 15;
+					$DisplayPiecesCarousel = 2;
+					$DisplayPiecesTestimonials = 2;
+					$SlideWidthTestimonials = 483;
 
-						<div class="footer__info">
-							<p>Новосибирск, Петухова, 63/2</p>
-							<p>+7 (383) 354-90-40  |  354-90-46</p>
-							<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
-							<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
-						</div>
+
+				} else if ( $(window).width() < 1200 ) {
+
+					$("#slider-newest").css({
+						'width': '1010px',
+					});
+					$("#slider-newest > div").css({
+						'width': '940px',
+						'margin-left': '-470px'
+					});
+					$("#slider-popular").css({
+						'width': '1010px',
+					});
+					$("#slider-popular > div").css({
+						'width': '940px',
+						'margin-left': '-470px'
+					});
+
+					$SlideWidthCarousel = 303;
+					$SlideSpacingCarousel = 15;
+					$DisplayPiecesCarousel = 3;
+					$DisplayPiecesTestimonials = 3;
+					$SlideWidthTestimonials = 310;
+
+				} else {
+
+					$SlideWidthCarousel = 314;
+					$SlideSpacingCarousel = 29;
+					$DisplayPiecesCarousel = 3;
+					$DisplayPiecesTestimonials = 3;
+					$SlideWidthTestimonials = 310;
+
+				}
+
+				//Jssor slider: slider-testimonials
+				var options = { 
+					$AutoPlay: false,		
+					$SlideWidth: $SlideWidthTestimonials,				                
+					$DisplayPieces: $DisplayPiecesTestimonials,   
+					$SlideSpacing: 35,
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$,
+						$ChanceToShow: 2,
+						$SpacingX: 8,
+						$Steps: 3
+					}
+				};   
+				var slider_testimonials = new $JssorSlider$('slider-testimonials', options);
+
+			  //Jssor slider: slider-newest and slider-popular
+			  var options = {
+			  	$SlideWidth: $SlideWidthCarousel,				                
+			  	$DisplayPieces: $DisplayPiecesCarousel,  
+			  	$SlideSpacing: $SlideSpacingCarousel,
+			  	$CaptionSliderOptions: {
+			  		$Class: $JssorCaptionSlider$,
+			  		$PlayInMode: 1,
+			  		$PlayOutMode: 3
+			  	},
+			  	$ArrowNavigatorOptions: {
+			  		$Class: $JssorArrowNavigator$,
+			  		$ChanceToShow: 2
+			  	}
+			  };  
+			  var slider_newest = new $JssorSlider$("slider-newest", options);
+			  var slider_popular = new $JssorSlider$("slider-popular", options);
+
+				//Jssor slider: main-slider
+				var options = { 
+					$AutoPlay: true,
+					$ArrowNavigatorOptions: {
+						$Class: $JssorArrowNavigator$,
+						$ChanceToShow: 2
+					},
+					$BulletNavigatorOptions: {
+						$Class: $JssorBulletNavigator$,
+						$ChanceToShow: 2,
+						$SpacingX: 8
+					}
+				};   
+				var main_slider = new $JssorSlider$('main-slider', options);
+
+			  //responsive code begin
+			  //you can remove responsive code if you don't want the slider scales
+			  //while window resizes
+			  function ScaleSlider() {
+			  	var parentWidth = $('#main-slider').parent().width();
+			  	var parentWidthPopular = $('#slider-popular').parent().width();
+			  	var parentWidthNewest = $('#slider-newest').parent().width();
+			  	var parentWidthTestimonials = $('#slider-testimonials').parent().width();
+
+			  	if (parentWidth) {
+			  		main_slider.$ScaleWidth(parentWidth);
+			  		slider_testimonials.$ScaleWidth(parentWidthTestimonials);
+			  		if ( ($(window).width() > 479) && ($(window).width() < 769) ) {
+			  			slider_newest.$ScaleWidth(parentWidthNewest);
+			  			slider_popular.$ScaleWidth(parentWidthPopular);
+			  		}
+			  	}
+			  	else
+			  		window.setTimeout(ScaleSlider, 30);
+			  }
+			  //Scale slider after document ready
+			  ScaleSlider();
+			  //Scale slider while window load/resize/orientationchange.
+			  $(window).bind("load", ScaleSlider);
+			  $(window).bind("resize", ScaleSlider);
+			  $(window).bind("orientationchange", ScaleSlider);
+			  //responsive code end
+			});
+</script>
+
+<!-- Start footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+
+				<nav class="footer__category clearfix">
+					<div class="menu__left">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
+						</ul>
 					</div>
-					<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
-
-						<nav class="footer__menu">
-							<ul class="menu">
-								<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
-							</ul>
-						</nav>
-
+					
+					<div class="menu__right">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+						</ul>
 					</div>
-					<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
-						<div class="footer__search">
-							<form class="search">
-								<input type="text" class="search__input" placeholder="Искать: например, торты">
-								<button class="button search__button"></button>
-							</form>
-						</div>
-						<div class="footer__social">
-							<p>Неаполь в социальных сетях:</p>
-							<a href="#" class="soc-icon soc-icon__vk"></a>
-							<a href="#" class="soc-icon soc-icon__fb"></a>
-						</div>
-						<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
-					</div>
+
+					<div class="mark__white"></div>
+				</nav>
+
+				<div class="footer__info">
+					<p>Новосибирск, Петухова, 63/2</p>
+					<p>+7 (383) 354-90-40  |  354-90-46</p>
+					<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
+					<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
 				</div>
 			</div>
-			<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
-		</footer>
-		<!-- End footer -->
+			<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
 
-		<div class="hidden"></div>
+				<nav class="footer__menu">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+					</ul>
+				</nav>
 
-		<div class="loader">
-			<div class="loader_inner"></div>
+			</div>
+			<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
+				<div class="footer__search">
+					<form class="search">
+						<input type="text" class="search__input" placeholder="Искать: например, торты">
+						<button class="button search__button"></button>
+					</form>
+				</div>
+				<div class="footer__social">
+					<p>Неаполь в социальных сетях:</p>
+					<a href="#" class="soc-icon soc-icon__vk"></a>
+					<a href="#" class="soc-icon soc-icon__fb"></a>
+				</div>
+				<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+			</div>
 		</div>
+	</div>
+	<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
+</footer>
+<!-- End footer -->
+
+<div class="hidden"></div>
+
+<div class="loader">
+	<div class="loader_inner"></div>
+</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -525,14 +737,6 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	
-	<script src="js/common.js"></script>
 	
 </body>
 </html>
