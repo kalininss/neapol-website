@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  //zoom slider
-  $(".image-list__item").click(function(){
-    var $img = $(this).children("img");
-    //$(this).parent().parent().find("")
-    //children("img").
-  });
-
   // (+,-) Кнопки
   $(".icon__small-array_left").click(function(){
     var $input = $(".icon__small-array_left").next();

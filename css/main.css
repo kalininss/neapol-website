@@ -1098,6 +1098,7 @@ p.copyright {
 .product-count {
   display: inline-block;
   margin-left: 20px;
+  font-size: 0;
 }
 
 .btn_card {
@@ -1114,7 +1115,7 @@ p.copyright {
 .icon_card-btn {
   width: 27px;
   height: 22px;
-  background-position: -332px -45px;
+  background-position: -787px -5px;
   margin-top: 7px;
 }
 
@@ -1128,18 +1129,16 @@ p.copyright {
   width: 8px;
   height: 13px;
   background-position: -307px -19px;
-  margin-top: 8px;
-  margin-right: 3px;
-  margin-left: 2px;
+  margin: 8px 5px 0;
   cursor: pointer;
 }
 
 .icon__small-array_right {
-  background-position: -252px -19px;
+  background-position: -256px -19px;
 }
 
 .icon__small-array_right:hover {
-  background-position: -252px -6px;
+  background-position: -256px -6px;
 }
 
 .icon__small-array_left:hover {
@@ -1174,8 +1173,8 @@ p.copyright {
   height: 66px;
   background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 94px;
+  right: 15px;
 }
 
 .image-big {
@@ -1190,14 +1189,8 @@ p.copyright {
   line-height: 40px;
   margin-left: auto;
   margin-right: auto;
-  background-position: -325px -82px;
+  background-position: -745px -5px;
   cursor: pointer;
-}
-
-.icon__zoom-plus:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .image-list {
@@ -1330,6 +1323,7 @@ p.copyright {
   border-radius: 2px;
   border: 1px solid #D5D0C8;
   padding-left: 10px;
+  padding-right: 10px;
   color: #806b6b !important;
 }
 
@@ -1339,6 +1333,7 @@ p.copyright {
   height: 26px;
   margin-bottom: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   color: #806b6b !important;
   width: 100%;
 }
@@ -1349,6 +1344,7 @@ p.copyright {
   height: 26px;
   margin-bottom: 20px;
   padding-left: 10px;
+  padding-right: 10px;
   color: #806b6b !important;
   width: 100%;
 }
@@ -1372,16 +1368,12 @@ p.copyright {
   margin-bottom: 20px;
 }
 
-.gallery__item:nth-of-type(3n) {
-  margin-right: 0;
-}
-
 .buyer-info__gallery {
   margin-top: 135px;
 }
 
 .buyer-info__text {
-  margin: 15px 0;
+  margin-bottom: 40px;
 }
 
 .advantages__title {
@@ -1479,14 +1471,10 @@ p.copyright {
   display: none;
 }
 
-.carousel-expand {
-  padding: 0;
-}
-
 .carousel__title {
   display: block;
   width: 100%;
-  padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .icon-answer {
@@ -1540,6 +1528,7 @@ p.copyright {
   height: 26px;
   margin-bottom: 14px;
   padding-left: 10px;
+  padding-right: 10px;
   color: #806b6b !important;
   width: 100%;
 }
@@ -1554,4 +1543,29 @@ p.copyright {
 
 .call-back__text {
   margin-top: 3px;
+}
+
+.fotorama__thumb-border {
+  background-image: none;
+}
+
+.fotorama_product-detail .fotorama__thumb-border {
+  background-color: rgba(151, 12, 48, 0.6);
+}
+
+.fotorama_buyer-info {
+  margin-top: 14px;
+}
+
+.rub {
+  display: inline-block;
+  border-bottom: 2px solid;
+  line-height: 0;
+  width: 20px;
+  height: 5px;
+}
+
+.slider .rub {
+  width: 16px;
+  height: 4px;
 }

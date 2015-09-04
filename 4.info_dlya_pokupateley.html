@@ -24,12 +24,24 @@
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
 	<link rel="stylesheet" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" href="libs/fotorama/fotorama.dev.css"/>
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/fotorama/fotorama.dev.js"></script>
+	
+	<script src="js/common.js"></script>
 
 </head>
 
@@ -141,16 +153,23 @@
 	<main class="main-content main-content_strip">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12">
+					
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
 				<div class="col-md-8">
 					<h1 class="buyer-info__h1">Информация для покупателей</h1>
 					<h2 class="buyer-info__h2">Наше производство</h2>
-					<div class="image-big">
+					<!-- <div class="image-big">
 						<img class="image-big__img" src="img/cake-kitchen.jpg" alt="">
-					</div>
+					</div> -->
 				</div>
 
 				<div class="col-md-4">
-					<div class="buyer-info__gallery gallery">
+					<!-- <div class="buyer-info__gallery gallery">
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
@@ -159,158 +178,211 @@
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
 						<div class="gallery__item"><img src="img/cherry_small.jpg" alt=""></div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="row buyer-info__text">
-				<div class="col-md-6"><p>Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. В «архитектуре» этой сладкой страны нет ничего «типового»: все </p></div>
-				<div class="col-md-6"><p>Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. В «архитектуре» этой сладкой страны нет ничего «типового»: все </p></div>
+				<div class="col-md-8">
+					<div class="fotorama fotorama_buyer-info" data-nav="thumbs"  
+																data-thumbmargin="10" 
+																data-thumbborderwidth="0"
+																data-fit="cover"
+																data-arrows="false"
+																data-width="100%"
+																data-thumbwidth="92"
+																data-thumbheight="74" >
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+					<a href="img/cake-kitchen.jpg"><img src="img/cherry_small.jpg"></a>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<p>Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. В «архитектуре» этой сладкой страны нет ничего «типового»: все </p>
+				<p>Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. В «архитектуре» этой сладкой страны нет ничего «типового»: все </p>
 			</div>
 		</div>
-		<div class="advantages-pages buyer-info__advantages-pages">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="advantages">
-							<h2 class="advantages__title">Ежедневно мы производим</h2>
-							<div class="order-advantage order-advantage_small">
-								<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
-								<div class="order-advantage__count">60</div>
-								<h3 class="order-advantage__title order-advantage__title_buyer-info">Тортов</h3>
-							</div>
-
-							<div class="order-advantage">
-								<div class="order-adnvantage__icon order-adnvantage__icon_cake"></div>
-								<div class="order-advantage__count">500</div>
-								<h3 class="order-advantage__title order-advantage__title_buyer-info">Пироженных</h3>
-							</div>
-
-							<div class="order-advantage order-advantage_small">
-								<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
-								<div class="order-advantage__count">2000</div>
-								<h3 class="order-advantage__title order-advantage__title_buyer-info">Булочек</h3>
-							</div>
-
-							<div class="order-advantage">
-								<div class="order-adnvantage__icon order-adnvantage__icon_cake"></div>
-								<div class="order-advantage__count">300</div>
-								<h3 class="order-advantage__title order-advantage__title_buyer-info">Пирогов</h3>
-							</div>
-
-							<div class="order-advantage order-advantage_small">
-								<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
-								<div class="order-advantage__count">200</div>
-								<h3 class="order-advantage__title order-advantage__title_buyer-info">Изделий на заказ</h3>
-							</div>
-
+	</div>
+	<div class="advantages-pages buyer-info__advantages-pages">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="advantages">
+						<h2 class="advantages__title">Ежедневно мы производим</h2>
+						<div class="order-advantage order-advantage_small">
+							<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
+							<div class="order-advantage__count">60</div>
+							<h3 class="order-advantage__title order-advantage__title_buyer-info">Тортов</h3>
 						</div>
+
+						<div class="order-advantage">
+							<div class="order-adnvantage__icon order-adnvantage__icon_cake"></div>
+							<div class="order-advantage__count">500</div>
+							<h3 class="order-advantage__title order-advantage__title_buyer-info">Пироженных</h3>
+						</div>
+
+						<div class="order-advantage order-advantage_small">
+							<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
+							<div class="order-advantage__count">2000</div>
+							<h3 class="order-advantage__title order-advantage__title_buyer-info">Булочек</h3>
+						</div>
+
+						<div class="order-advantage">
+							<div class="order-adnvantage__icon order-adnvantage__icon_cake"></div>
+							<div class="order-advantage__count">300</div>
+							<h3 class="order-advantage__title order-advantage__title_buyer-info">Пирогов</h3>
+						</div>
+
+						<div class="order-advantage order-advantage_small">
+							<div class="order-adnvantage__icon order-adnvantage__icon_pie"></div>
+							<div class="order-advantage__count">200</div>
+							<h3 class="order-advantage__title order-advantage__title_buyer-info">Изделий на заказ</h3>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<section class="license">
-			<div class="container carousel-expand">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="carousel__title license__title">Сертификаты и лицензии</h2>
+	<section class="license">
+		<div class="container carousel-expand">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="carousel__title license__title">Сертификаты и лицензии</h2>
 
-						<div class="carousel carousel_license">
-							<div>
-								<div class="slide-item slide-item_license">
-									<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
-									</div>
+					<div class="carousel carousel_license">
+						<div>
+							<div class="slide-item slide-item_license">
+								<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
 							</div>
+						</div>
 
-							<div>
-								<div class="slide-item slide-item_license">
-									<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
-									</div>
+						<div>
+							<div class="slide-item slide-item_license">
+								<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
 							</div>
+						</div>
 
-							<div>
-								<div class="slide-item slide-item_license">
-									<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
-									</div>
+						<div>
+							<div class="slide-item slide-item_license">
+								<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
 							</div>
+						</div>
 
-							<div>
-								<div class="slide-item slide-item_license">
-									<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
-									</div>
+						<div>
+							<div class="slide-item slide-item_license">
+								<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
 							</div>
+						</div>
 
-							<div>
-								<div class="slide-item slide-item_license">
-									<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
-									</div>
+						<div>
+							<div class="slide-item slide-item_license">
+								<img class="owl-slider__img" src="../img/slide-certificate.jpg" alt="">
 							</div>
-
 						</div>
 
 					</div>
-				</div>
-			</div>
-		</section>
+					<script>
+					$(document).ready(function() {
+						$(".carousel_license").slick({
+							slidesToShow: 4,
+							swipeToSlide: true,
+							responsive: [
+							{
+								breakpoint: 1024,
+								settings: {
+									slidesToShow: 3,
+									slidesToScroll: 3
+								}
+							},
+							{
+								breakpoint: 600,
+								settings: {
+									slidesToShow: 2,
+									slidesToScroll: 2
+								}
+							},
+							{
+								breakpoint: 480,
+								settings: {
+									slidesToShow: 1,
+									slidesToScroll: 1
+								}
+							}
+							]
+						});
+					});
+					</script>
 
-		<!-- Start FAQ -->
-		<section class="buyer-info__faq">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-
-						<div class="faq">
-							<h2 class="faq__title">Частые вопросы</h2>
-							<ul class="faq__list list_clean">
-								<li class="faq-item">
-									<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
-									<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
-								</li>
-								<li class="faq-item">
-									<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
-									<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
-								</li>
-								<li class="faq-item">
-									<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
-									<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
-								</li>
-								<li class="faq-item">
-									<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
-									<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End FAQ -->
-		
-		<section class="buyer-info__call-back">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="call-back__title">Задать вопрос</h2>
-						<h4 class="call-back__text">Для этого вам необходимо заполнить заявку. Наш менеджер свяжется с вами и обсудит все вопросы будущего банкета.</h4>
-					</div></div>
-					<form class="form form_callback">
-						<div class="row">
-							<div class="col-md-8">
-								<textarea class="form_callback__message_buyer-info form_callback__message" name="message" id="message" placeholder="Ваши пожелания к мероприятию. Буквально, в двух словах."></textarea>
-							</div>
-							<div class="col-md-4">
-								<input class="form_callback__name" required type="text" name="name" placeholder="Ваше имя">
-								<input class="form_callback__phone form_callback__phone_buyer-info" required type="text" name="phone" placeholder="Телефон">
-								<input class="form_callback__mail" required type="text" name="mail" placeholder="Email">
-								<button class="btn btn_callback">Отправить</button>
-							</div>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- Start FAQ -->
+	<section class="buyer-info__faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="faq">
+						<h2 class="faq__title">Частые вопросы</h2>
+						<ul class="faq__list list_clean">
+							<li class="faq-item">
+								<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
+								<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+							</li>
+							<li class="faq-item">
+								<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
+								<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+							</li>
+							<li class="faq-item">
+								<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
+								<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+							</li>
+							<li class="faq-item">
+								<p class="faq-item__title"><span class="icon icon-answer"></span>Как часто вы используете в своей выпечке муку высшего сорта? Есть ли у вас диетическая продукция?</p>
+								<p class="faq-item__text">Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую! Очень вкусные тортики! Заказываем уже не в первый раз, сервис на высшем уровне!!! Всем рекомендую!</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End FAQ -->
+
+	<section class="buyer-info__call-back">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="call-back__title">Задать вопрос</h2>
+					<h4 class="call-back__text">Для этого вам необходимо заполнить заявку. Наш менеджер свяжется с вами и обсудит все вопросы будущего банкета.</h4>
+				</div>
+			</div>
+			<form class="form form_callback">
+				<div class="row">
+					<div class="col-md-8">
+						<textarea class="form_callback__message_buyer-info form_callback__message" name="message" id="message" placeholder="Ваши пожелания к мероприятию. Буквально, в двух словах."></textarea>
+					</div>
+					<div class="col-md-4">
+						<input class="form_callback__name" required type="text" name="name" placeholder="Ваше имя">
+						<input class="form_callback__phone form_callback__phone_buyer-info" required type="text" name="phone" placeholder="Телефон">
+						<input class="form_callback__mail" required type="text" name="mail" placeholder="Email">
+						<button class="btn btn_callback">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</section>
 </main>
 <!-- End 	content-page -->
 
@@ -392,24 +464,6 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
-	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
-	
-	<script src="js/common.js"></script>
-	<script>
-		$(document).ready(function() {
-			$(".carousel_license").slick({
-				slidesToShow: 4,
-				swipeToSlide: true
-			});
-		});
-	</script>
 	
 </body>
 </html>

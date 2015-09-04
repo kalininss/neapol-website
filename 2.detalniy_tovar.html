@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="libs/fotorama/fotorama.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -36,6 +37,7 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/fotorama/fotorama.js"></script>
 	
 	<script src="js/common.js"></script>
 
@@ -169,7 +171,7 @@
 								<h1>Булочка с маком</h1><br>
 								<span class="add-info__weight">выход 1120 гр.</span>
 							</div>
-							<div class="product-detail__main-price">50 ₽</div>
+							<div class="product-detail__main-price">50 <span class="rub">Р</span></div>
 							<a href="#" class="product-detail__compare compare">
 								<span class="icon icon__scale"></span>
 								<span class="compare__text">Сравнить</span>
@@ -198,7 +200,22 @@
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div class="product-detail__zoom-slider zoom-slider">
+						<div class="fotorama fotorama_product-detail" data-nav="thumbs"  
+																	data-thumbmargin="10" 
+																	data-thumbborderwidth="0"
+																	data-fit="cover"
+																	data-arrows="false"
+																	data-width="100%"
+																	data-thumbwidth="92"
+																	data-thumbheight="74" >
+							<a href="img/zoom-slider-big.jpg"><img src="img/zoom-slider-small.jpg"></a>
+							<a href="img/zoom-slider-big.jpg"><img src="img/zoom-slider-small.jpg"></a>
+							<a href="img/zoom-slider-big.jpg"><img src="img/zoom-slider-small.jpg"></a>
+							<a href="img/zoom-slider-big.jpg"><img src="img/zoom-slider-small.jpg"></a>
+						</div>
+						<div class="image-big__zoom-btn"><span class="icon icon__zoom-plus"></span></div>
+
+						<!--div class="product-detail__zoom-slider zoom-slider">
 							<div class="image-big">
 								<img class="image-big__img" src="img/zoom-slider-big.jpg" alt="">
 								<div class="image-big__zoom-btn"><span class="icon icon__zoom-plus"></span></div>
@@ -210,7 +227,7 @@
 								<div class="image-list__item"><img src="img/zoom-slider-small.jpg" alt=""><div class="image-list__bg"></div></div>
 								<div class="image-list__item"><img src="img/zoom-slider-small.jpg" alt=""><div class="image-list__bg"></div></div>
 							</div>
-						</div>
+						</div-->
 					</div>
 				</section>
 			</div>
@@ -220,7 +237,7 @@
 
 						<!-- Start slider-popular -->
 						<div class="slider">
-						<a href="#" class="slider__title"><h2>Популярные товары этого раздела</h2></a>
+							<a href="#" class="slider__title"><h2>Популярные товары этого раздела</h2></a>
 
 							<div class="slider slider_carousel slider__white-bg" id="slider-popular" style="position: relative; top: 0px; left: -35px; width: 1070px; height: 303px; overflow: hidden;">
 								<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 50%; margin-left: -500px; top: 0px; width: 1000px; height: 303px;">
@@ -232,7 +249,7 @@
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
 												<span class="add-info__weight">выход 1120 гр.</span>
-												<span class="add-info__price">450 ₽</span>
+												<span class="add-info__price">450 <span class="rub">Р</span></span>
 											</div>
 										</div>
 									</div>
@@ -244,7 +261,7 @@
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
 												<span class="add-info__weight">выход 1120 гр.</span>
-												<span class="add-info__price">450 ₽</span>
+												<span class="add-info__price">450 <span class="rub">Р</span></span>
 											</div>
 										</div>
 									</div>
@@ -256,7 +273,7 @@
 											<div class="slide__add-info">
 												<a href="#" class="add-info__name">Пирожные в корзиночках</a>
 												<span class="add-info__weight">выход 1120 гр.</span>
-												<span class="add-info__price">450 ₽</span>
+												<div class="add-info__price">450 <span class="rub">Р</span></div>
 											</div>
 										</div>
 									</div>
@@ -276,69 +293,69 @@
 							if ( $(window).width() < 480 ) {
 
 								$(".slider_carousel").css({
-						  		'width': '300px',
-						  		'margin': '0 auto',
-						  		'left': '-5px'
-						  	});
-						  	$(".slider_carousel > div").css({
-						  		'width': '250px',
-						  		'margin-left': '-125px'
-						  	});
-						    $(".slider__caption").css({
-						      'width': '250px'
-						    });
+									'width': '300px',
+									'margin': '0 auto',
+									'left': '-5px'
+								});
+								$(".slider_carousel > div").css({
+									'width': '250px',
+									'margin-left': '-125px'
+								});
+								$(".slider__caption").css({
+									'width': '250px'
+								});
 
-						  	$SlideWidthCarousel = 250;
-						  	$SlideSpacingCarousel = 0;
-						  	$DisplayPiecesCarousel = 1;
+								$SlideWidthCarousel = 250;
+								$SlideSpacingCarousel = 0;
+								$DisplayPiecesCarousel = 1;
 
-						  } else if ( $(window).width() < 768 ) {
+							} else if ( $(window).width() < 768 ) {
 
-						    $(".slider_carousel").css({
-						      'width': '691px',
-						      'margin': '0 auto',
-						      'left': '0'
-						    });
-						    $(".slider_carousel > div").css({
-						      'width': '621px',
-						      'margin-left': '-310px'
-						    });
+								$(".slider_carousel").css({
+									'width': '691px',
+									'margin': '0 auto',
+									'left': '0'
+								});
+								$(".slider_carousel > div").css({
+									'width': '621px',
+									'margin-left': '-310px'
+								});
 
-						    $SlideWidthCarousel = 303;      
-						    $SlideSpacingCarousel = 15;
-						    $DisplayPiecesCarousel = 2;
+								$SlideWidthCarousel = 303;      
+								$SlideSpacingCarousel = 15;
+								$DisplayPiecesCarousel = 2;
 
 
 							} else if ( $(window).width() < 992 ) {
 
 								$(".slider_carousel").css({
-						  		'width': '691px',
-						  		'margin': '0 auto',
-						  		'left': '0'
-						  	});
-						  	$(".slider_carousel > div").css({
-						  		'width': '621px',
-						  		'margin-left': '-310px'
-						  	});
+									'width': '691px',
+									'margin': '0 auto',
+									'left': '0'
+								});
+								$(".slider_carousel > div").css({
+									'width': '621px',
+									'margin-left': '-310px'
+								});
 
-						  	$SlideWidthCarousel = 303;
-						  	$SlideSpacingCarousel = 15;
-						  	$DisplayPiecesCarousel = 2;
+								$SlideWidthCarousel = 303;
+								$SlideSpacingCarousel = 15;
+								$DisplayPiecesCarousel = 2;
 
 
 							} else if ( $(window).width() < 1200 ) {
 
-						  	$("#slider-popular").css({
-						  		'width': '1010px',
-						  	});
-						  	$("#slider-popular > div").css({
-						  		'width': '940px',
-						  		'margin-left': '-470px'
-						  	});
+								$("#slider-popular").css({
+									'width': '1010px',
+								});
+								$("#slider-popular > div").css({
+									'width': '940px',
+									'margin-left': '-470px'
+								});
 
-						  	$SlideWidthCarousel = 303;
-						  	$SlideSpacingCarousel = 15;
-						  	$DisplayPiecesCarousel = 3;
+								$SlideWidthCarousel = 303;
+								$SlideSpacingCarousel = 15;
+								$DisplayPiecesCarousel = 3;
 
 							} else {
 
@@ -373,9 +390,9 @@
 						  	var parentWidthPopular = $('#slider-popular').parent().width();
 
 						  	if (parentWidthPopular) {
-						      if ( ($(window).width() > 479) && ($(window).width() < 769) ) {
-						        slider_popular.$ScaleWidth(parentWidthPopular);
-						      }
+						  		if ( ($(window).width() > 479) && ($(window).width() < 769) ) {
+						  			slider_popular.$ScaleWidth(parentWidthPopular);
+						  		}
 						  	}
 						  	else
 						  		window.setTimeout(ScaleSlider, 30);
@@ -383,87 +400,87 @@
 						  //Scale slider after document ready
 						  ScaleSlider();
 						});
-						</script>
-						<!-- End slider-popular -->
+</script>
+<!-- End slider-popular -->
 
-					</section>
-				</div>
-			</div>
-		</div>
-	</main>
-	<!-- End 	content-page -->
+</section>
+</div>
+</div>
+</div>
+</main>
+<!-- End 	content-page -->
 
-	<!-- Start footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+<!-- Start footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
 
-					<nav class="footer__category clearfix">
-						<div class="menu__left">
-							<ul class="menu">
-								<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
-							</ul>
-						</div>
-
-						<div class="menu__right">
-							<ul class="menu">
-								<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
-							</ul>
-						</div>
-
-						<div class="mark__white"></div>
-					</nav>
-
-					<div class="footer__info">
-						<p>Новосибирск, Петухова, 63/2</p>
-						<p>+7 (383) 354-90-40  |  354-90-46</p>
-						<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
-						<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
-
-					<nav class="footer__menu">
+				<nav class="footer__category clearfix">
+					<div class="menu__left">
 						<ul class="menu">
-							<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
 						</ul>
-					</nav>
+					</div>
 
-				</div>
-				<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
-					<div class="footer__search">
-						<form class="search">
-							<input type="text" class="search__input" placeholder="Искать: например, торты">
-							<button class="button search__button"></button>
-						</form>
+					<div class="menu__right">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+						</ul>
 					</div>
-					<div class="footer__social">
-						<p>Неаполь в социальных сетях:</p>
-						<a href="#" class="soc-icon soc-icon__vk"></a>
-						<a href="#" class="soc-icon soc-icon__fb"></a>
-					</div>
-					<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+
+					<div class="mark__white"></div>
+				</nav>
+
+				<div class="footer__info">
+					<p>Новосибирск, Петухова, 63/2</p>
+					<p>+7 (383) 354-90-40  |  354-90-46</p>
+					<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
+					<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
 				</div>
 			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
+
+				<nav class="footer__menu">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
+				<div class="footer__search">
+					<form class="search">
+						<input type="text" class="search__input" placeholder="Искать: например, торты">
+						<button class="button search__button"></button>
+					</form>
+				</div>
+				<div class="footer__social">
+					<p>Неаполь в социальных сетях:</p>
+					<a href="#" class="soc-icon soc-icon__vk"></a>
+					<a href="#" class="soc-icon soc-icon__fb"></a>
+				</div>
+				<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+			</div>
 		</div>
-		<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
-	</footer>
-	<!-- End footer -->
-
-	<div class="hidden"></div>
-
-	<div class="loader">
-		<div class="loader_inner"></div>
 	</div>
+	<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
+</footer>
+<!-- End footer -->
+
+<div class="hidden"></div>
+
+<div class="loader">
+	<div class="loader_inner"></div>
+</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
