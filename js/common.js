@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+  //запуск fancybox
+  $(".fancybox").fancybox();
+
+  //кнопка + в галерее
+  function startFotorama(){
+    imgLink = $(".fotorama__img").attr("src");
+    $(".image-big__zoom-btn").attr({
+      href: imgLink
+    });
+  }
+  setTimeout(startFotorama(), 100);
+  $(".image-big__zoom-btn").click(function(){
+    imgLink = $(".fotorama__img").attr("src");
+    $(".image-big__zoom-btn").attr({
+      href: imgLink
+    });
+  });
+
   // (+,-) Кнопки
   $(".icon__small-array_left").click(function(){
     var $input = $(".icon__small-array_left").next();
