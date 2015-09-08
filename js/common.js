@@ -20,7 +20,7 @@ $(document).ready(function() {
 
   // (+,-) Кнопки
   $(".icon__small-array_left").click(function(){
-    var $input = $(".icon__small-array_left").next();
+    var $input = $(this).next();
     var count = parseInt($input.val()) - 1;
     count = count < 1 ? 1 : count;
     $input.val(count);
@@ -28,7 +28,7 @@ $(document).ready(function() {
     return false;
   });
   $(".icon__small-array_right").click(function(){
-    var $input = $(".icon__small-array_right").prev();
+    var $input = $(this).prev();
     var count = parseInt($input.val()) + 1;
     count = count < 1 ? 1 : count;
     $input.val(count);

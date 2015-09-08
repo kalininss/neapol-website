@@ -23,7 +23,8 @@
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
-	<link rel="stylesheet" href="libs/fotorama/fotorama.css">
+	<link rel="stylesheet" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" href="libs/fotorama/fotorama.dev.css"/>
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" media="screen">
 
 	<link rel="stylesheet" href="css/fonts.css">
@@ -38,7 +39,8 @@
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/fotorama/fotorama.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/fotorama/fotorama.dev.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	
 	<script src="js/common.js"></script>
@@ -151,99 +153,153 @@
 
 	<!-- Start 	content-page -->
 	<main class="main-content main-content_strip">
-		<section class="order-catalog">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12"><h1>Изделия на заказ</h1></div>
-				</div>
-				<div class="row">
-					<div class="col-md-2">
-						<div class="panel panel_descr">
-							<div class="panel__mark panel__mark_top"></div>
-							<h3 class="panel_descr-title">Описание:</h3>
-							<p>
-								Нежные булочки с маком, выпекаются по особой технологии с добавлением секретных ингредиентов. Станут отличным уркашением любого стола или небольшого праздника в узком семейном кругу. Порадуйте себя и своих близких вкусной сдобой с маком! Нежные булочки с маком, выпекаются по особой технологии с добавлением секретных ингредиентов.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-10"></div>
-				</div>
-			</div>
-		</section>
-	</main>
-	<!-- End 	content-page -->
-
-	<!-- Start footer -->
-	<footer class="footer">
+		
+	<section class="contacts__callback-info">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+				<div class="col-md-12">
 
-					<nav class="footer__category clearfix">
-						<div class="menu__left">
-							<ul class="menu">
-								<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
-							</ul>
+					<h1>Контактная информация</h1>
+					<div class="callback-info">
+						<div class="callback-group">
+							<h3 class="callback-group__name">Производственный отдел</h3>
+							<div class="col-md-4 callback-group__col">
+								<h4 class="callback-group__item">тел: (383) 345-33-33, (383) 345-33-33</h4>
+								<h4 class="callback-group__item">email: <a href="mailto:gjgjf@neapol.ru" class="callback-mail">gjgjf@neapol.ru</a></h4>
+							</div>
+							<div class="col-md-8 callback-group__col">
+								<h4 class="callback-group__item">Морозов Андрей Александрович</h4>
+							</div>
+							<div class="clearfix"></div>
 						</div>
-
-						<div class="menu__right">
-							<ul class="menu">
-								<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
-							</ul>
+						<div class="callback-group">
+							<h3 class="callback-group__name">Реклама и маркетинг</h3>
+							<div class="col-md-4 callback-group__col">
+								<h4 class="callback-group__item">тел: (383) 345-33-33, (383) 345-33-33</h4>
+								<h4 class="callback-group__item">email: <a href="mailto:gjgjf@neapol.ru" class="callback-mail">gjgjf@neapol.ru</a></h4>
+							</div>
+							<div class="col-md-8 callback-group__col">
+								<h4 class="callback-group__item">Морозов Андрей Александрович</h4>
+							</div>
+							<div class="clearfix"></div>
 						</div>
-
-						<div class="mark__white"></div>
-					</nav>
-
-					<div class="footer__info">
-						<p>Новосибирск, Петухова, 63/2</p>
-						<p>+7 (383) 354-90-40  |  354-90-46</p>
-						<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
-						<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
+						<div class="callback-group">
+							<h3 class="callback-group__name">Поставщикам</h3>
+							<div class="col-md-4 callback-group__col">
+								<h4 class="callback-group__item">тел: (383) 345-33-33, (383) 345-33-33</h4>
+								<h4 class="callback-group__item">email: <a href="mailto:gjgjf@neapol.ru" class="callback-mail">gjgjf@neapol.ru</a></h4>
+							</div>
+							<div class="col-md-8 callback-group__col">
+								<h4 class="callback-group__item">Морозов Андрей Александрович</h4>
+							</div>
+							<div class="clearfix"></div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
 
-					<nav class="footer__menu">
-						<ul class="menu">
-							<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
-							<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
-						</ul>
-					</nav>
-
-				</div>
-				<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
-					<div class="footer__search">
-						<form class="search">
-							<input type="text" class="search__input" placeholder="Искать: например, торты">
-							<button class="button search__button"></button>
-						</form>
-					</div>
-					<div class="footer__social">
-						<p>Неаполь в социальных сетях:</p>
-						<a href="#" class="soc-icon soc-icon__vk"></a>
-						<a href="#" class="soc-icon soc-icon__fb"></a>
-					</div>
-					<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
 				</div>
 			</div>
 		</div>
-		<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
-	</footer>
-	<!-- End footer -->
+	</section>
 
-	<div class="hidden"></div>
-
-	<div class="loader">
-		<div class="loader_inner"></div>
+	<section class="contacts__call-back">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="call-back__title">Задать вопрос</h2>
+					<h4 class="call-back__text">Для этого вам необходимо заполнить заявку. Наш менеджер свяжется с вами и обсудит все вопросы будущего банкета.</h4>
+				</div>
+			</div>
+			<form class="form form_callback">
+				<div class="row">
+					<div class="col-md-8">
+						<textarea class="form_callback__message_buyer-info form_callback__message" name="message" id="message" placeholder="Ваши пожелания к мероприятию. Буквально, в двух словах."></textarea>
+					</div>
+					<div class="col-md-4">
+						<input class="form_callback__name" required type="text" name="name" placeholder="Ваше имя">
+						<input class="form_callback__phone form_callback__phone_buyer-info" required type="text" name="phone" placeholder="Телефон">
+						<input class="form_callback__mail" required type="text" name="mail" placeholder="Email">
+						<button class="btn btn_callback">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
 	</div>
+</div>
+</section>
+</main>
+<!-- End 	content-page -->
+
+<!-- Start footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+
+				<nav class="footer__category clearfix">
+					<div class="menu__left">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
+						</ul>
+					</div>
+
+					<div class="menu__right">
+						<ul class="menu">
+							<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+						</ul>
+					</div>
+
+					<div class="mark__white"></div>
+				</nav>
+
+				<div class="footer__info">
+					<p>Новосибирск, Петухова, 63/2</p>
+					<p>+7 (383) 354-90-40  |  354-90-46</p>
+					<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
+					<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
+
+				<nav class="footer__menu">
+					<ul class="menu">
+						<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
+				<div class="footer__search">
+					<form class="search">
+						<input type="text" class="search__input" placeholder="Искать: например, торты">
+						<button class="button search__button"></button>
+					</form>
+				</div>
+				<div class="footer__social">
+					<p>Неаполь в социальных сетях:</p>
+					<a href="#" class="soc-icon soc-icon__vk"></a>
+					<a href="#" class="soc-icon soc-icon__fb"></a>
+				</div>
+				<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+			</div>
+		</div>
+	</div>
+	<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
+</footer>
+<!-- End footer -->
+
+<div class="hidden"></div>
+
+<div class="loader">
+	<div class="loader_inner"></div>
+</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -251,7 +307,6 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	
 	
 </body>
 </html>

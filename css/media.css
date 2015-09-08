@@ -45,6 +45,27 @@
 	.gallery__item {
 		margin-right: 5px;
 	}
+	.panel_catalog {
+		padding: 0 15px 20px;
+	}
+	.one-catalog-product__add-info {
+		padding: 15px 10px;
+	}
+	.one-catalog-product__price {
+		right: 10px;
+	}
+	.hover-info__button {
+		padding: 0;
+	}
+	.hover-info__description {
+		margin: 5px 0 0;
+	}
+	.hover-info__add-info {
+		padding: 0 10px;
+	}
+	.hover-info__main {
+		font-size: 13px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -148,6 +169,13 @@
 	.form_callback {
 		padding: 0;
 	}
+	.one-catalog-product:hover .one-catalog-product__hover-info {
+		display: none;
+	}
+	.block__to {
+		float: none;
+		margin-left: 10px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -231,6 +259,38 @@
 	}
 	.order-advantage__count {
 		margin-left: 140px;
+	}
+	.show-count {
+		float: none;
+	}
+	.sort-by {
+		float: none;
+		margin-bottom: 10px;
+	}
+	.one-catalog-product {
+		width: 45%;
+	}
+	.one-catalog-product:nth-of-type(3n),
+	.one-catalog-product {
+		margin-right: 10%;
+	}
+	.one-catalog-product:nth-of-type(2n) {
+		margin-right: 0;
+	}
+	.pagination__button {
+		display: none;
+	}
+	.pagination__list {
+		display: block;
+		text-align: center;
+	}
+	.pagination-page__link {
+		width: 40px;
+		height: 40px;
+		line-height: 38px;font-size: 18px;
+	}
+	.panel__mark_catalog {
+		top: -29px;
 	}
 }
 
@@ -325,6 +385,13 @@
 	.slider-popular .slider__title h2 {
 		font-size: 24px;
 		line-height: 26px;
+	}
+	.one-catalog-product__price {
+		font-size: 22px;
+	}
+	.one-catalog-product__price .rub {
+		border-width: 1px;
+		width: 12px;
 	}
 }
 /* Extra Small Devices, Phones */
@@ -480,6 +547,25 @@
 	}
 	.main-content h2 {
 		font-size: 24px;
+	}
+	.one-catalog-product {
+		width: 290px;
+	}
+	.one-catalog-product {
+		margin: 0 auto 30px !important;
+		display: block;
+		float: none;
+	}
+	.panel_catalog {
+		padding: 0 10px 20px;
+	}
+	.main-content_strip {
+		border: none;
+	}
+	.sort-by__list {
+		display: block;
+		margin-left: 13px;
+		margin-top: 3px;
 	}
 }
 
