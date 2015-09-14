@@ -185,6 +185,15 @@
 	.image-big__zoom-btn {
 		display: none;
 	}
+	.form_callback {
+		background-color: transparent;
+	}
+	.form_callback__name {
+		margin-top: 7px;
+	}
+.payment-advantage_small {
+    width: 17%;
+}
 }
 
 /* Small Devices, Tablets */
@@ -303,7 +312,6 @@
 	}
 }
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 680px) {
 	.image-list__item {
@@ -395,6 +403,22 @@
 	.mask-wrapper {
 		padding-bottom: 15px;
 	}
+	.date_right {
+		float: none;
+		display: block;
+	}
+	.payment-advantage {
+		-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+		transform: scale(0.8);
+	}
+	.payment-advantages {
+		margin-top: 20px;
+	}
+	.payment__header {
+		margin-top: 10px;
+	}
 }
 
 
@@ -445,6 +469,12 @@
 	.tabs {
 		border: none;
 		margin-left: 20px;
+	}
+	.payment-advantage {
+		-webkit-transform: scale(0.6);
+		-ms-transform: scale(0.6);
+		-o-transform: scale(0.6);
+		transform: scale(0.6);
 	}
 }
 /* Extra Small Devices, Phones */
@@ -599,7 +629,8 @@
 		text-align: center;
 	}
 	.main-content h2 {
-		font-size: 24px;
+		font-size: 22px;
+		line-height: 1.1;
 	}
 	.one-catalog-product {
 		width: 290px;
@@ -653,6 +684,25 @@
 	}
 	.btn_block {
 		margin-top: 10px;
+	}
+	.big-testimonials__title {
+		line-height: 1.1;
+		margin-bottom: 10px;
+	}
+	.big-testimonials__subtitle {
+		line-height: 1.1;
+	}
+	.payment-advantage {
+		-webkit-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5);
+		transform: scale(0.5);
+	}
+	.payment-advantages {
+		margin-top: 0px;
+	}
+	.payment__header {
+		margin-top: 0px;
 	}
 }
 
