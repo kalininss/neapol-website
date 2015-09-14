@@ -53,6 +53,10 @@ body textarea:required:valid {
   display: none;
 }
 
+img {
+  width: 100%;
+}
+
 h1, .h1 {
   font-size: 36px;
   font-family: "Cambria", serif;
@@ -2286,4 +2290,128 @@ input:focus {
 .payment-advantage_small {
   padding: 0 5px;
   width: 18%;
+}
+
+.col-catalog {
+  padding: 0;
+}
+
+.news__item {
+  margin: 0 15px;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+  position: relative;
+}
+
+.one-news__caption {
+  margin-top: 3px;
+  border-bottom: 3px solid #77282a;
+  background-color: #f4f2ee;
+}
+
+.caption-title {
+  font-family: "OpenSansBold", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.one-news__caption {
+  padding: 7px 13px 5px;
+  min-height: 157px;
+}
+
+.caption-link:hover {
+  text-decoration: none;
+}
+
+.caption-text {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.one-news__date {
+  position: absolute;
+  padding: 5px 13px;
+  background-color: rgba(255, 255, 255, 0.85);
+  bottom: 0;
+  font-size: 14px;
+  color: #77282a;
+}
+
+.thumb-wrapper {
+  position: relative;
+}
+
+.one-news {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.news-catalog {
+  font-size: 0;
+}
+
+.news-page__title {
+  margin-bottom: 15px;
+}
+
+.title-date {
+  font-size: 15px;
+  color: #77282a;
+  font-family: "OpenSansBold", sans-serif;
+  display: inline-block;
+  float: right;
+  vertical-align: bottom;
+  margin-top: 47px;
+}
+
+.article-title {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.article {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #b3a6a6;
+}
+
+.pagination__lonely {
+  font-family: "OpenSansBold", sans-serif;
+  color: #bf9f60;
+  text-transform: uppercase;
+}
+
+.pagination__lonely:hover {
+  color: #77282a;
+  text-decoration: none;
+}
+
+.pagination__lonely:hover .icon__small-array_left {
+  background-position: -307px -6px;
+}
+
+.pagination__lonely:hover .icon__small-array_right {
+  background-position: -256px -6px;
+}
+
+.pagination__lonely .icon {
+  vertical-align: baseline;
+  margin-bottom: -2px;
+}
+
+.pagination__lonely_prev {
+  margin-right: 100px;
+}
+
+.article__pagination {
+  margin-top: 10px;
+}
+
+.one-news-page {
+  margin-bottom: 50px;
+}
+
+.pagination__btn {
+  margin-top: 33px;
+  padding: 0 20px;
 }
