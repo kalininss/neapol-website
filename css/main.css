@@ -1044,6 +1044,7 @@ p.copyright {
   text-align: left;
   padding: 10px 20px;
   margin-top: 25px;
+  border: 2px solid #77282a;
 }
 
 .panel_descr-title {
@@ -1662,7 +1663,8 @@ input[type="radio"] + label {
   font-size: 15px;
 }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
   content: "";
   display: inline-block;
   float: left;
@@ -1674,14 +1676,16 @@ input[type="checkbox"] + label::before {
   vertical-align: top;
 }
 
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
   background-image: url(../img/sprite.png);
   background-position: -152px -27px;
   border-color: #77282a;
 }
 
-input[type="radio"]:checked + label {
-  color: #bf9f60;
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  color: #77282a;
 }
 
 input:focus {
@@ -1950,4 +1954,236 @@ input:focus {
 
 .contacts__callback-info {
   margin-bottom: 20px;
+}
+
+.btn_block {
+  margin-top: 33px;
+}
+
+.product-detail__header {
+  position: relative;
+  border-bottom: 2px solid #eeebe6;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.gold-title {
+  font-family: "Cambria", serif;
+  color: #bf9f60;
+}
+
+.weight-count {
+  max-width: 90px;
+  border-radius: 3px;
+  border: 1px solid #d8d3cb;
+  padding: 3px 8px;
+  color: #77282a;
+  font-size: 15px;
+  height: 31px;
+  margin-bottom: 20px;
+  -moz-appearance: textfield;
+}
+
+.my-range {
+  display: inline-block;
+  width: 75%;
+  float: right;
+}
+
+.noUi-pips-horizontal {
+  top: -17px;
+}
+
+.noUi-pips {
+  font-size: 13px;
+  font-family: "OpenSansBold", sans-serif;
+  color: #77282a;
+}
+
+.noUi-marker-horizontal.noUi-marker {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+.noUi-marker-horizontal {
+  background-color: #bf9f60;
+  cursor: pointer;
+}
+
+.noUi-background {
+  background: #bf9f60;
+}
+
+.noUi-horizontal {
+  height: 3px;
+}
+
+.noUi-target {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-origin {
+  background: #77282a;
+}
+
+.noUi-horizontal .noUi-handle {
+  display: none;
+}
+
+.noUi-value-horizontal {
+  top: -12px;
+  padding-top: 0;
+  margin-left: -14px;
+}
+
+.labeled-checkbox_double {
+  width: 50%;
+  display: inline-block;
+}
+
+.filter__list_double {
+  font-size: 0;
+}
+
+.filter_border_dotted {
+  border-bottom-style: dotted;
+  padding-bottom: 10px;
+}
+
+.panel_relative {
+  position: relative;
+  margin-top: 50px;
+}
+
+.mark_top_fix {
+  top: -30px;
+}
+
+.buy-area_order {
+  margin-top: 20px;
+}
+
+.btn_mask {
+  color: #bf9f60;
+  float: right;
+  border-color: #bf9f60;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+}
+
+.btn_mask:hover {
+  background: #bf9f60;
+}
+
+.custom-file-input {
+  width: 120px;
+  height: 66px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: -17px;
+  right: 0;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.mask-wrapper {
+  position: relative;
+}
+
+.form-area__text {
+  width: 75%;
+  float: left;
+  line-height: 18px;
+}
+
+.file-name {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+}
+
+.sub-title_gold {
+  color: #bf9f60;
+  font-family: "Cambria", serif;
+  margin-bottom: 10px;
+}
+
+.comment_order {
+  width: 100%;
+  min-height: 170px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  line-height: 1.4;
+  border-color: #D5D0C8;
+}
+
+.form-area_dotted {
+  border-bottom: 2px dotted #d8d3cb;
+}
+
+.wrapper .active {
+  color: #77282a;
+  border-bottom: 2px solid #77282a;
+}
+
+.softly-link {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.softly-link:hover,
+.softly-link:active,
+.softly-link:focus {
+  text-decoration: none;
+}
+
+.softly-link_active {
+  color: #bf9f60;
+}
+
+.tabs {
+  font-size: 15px;
+  font-family: "Cambria", serif;
+  border-bottom: 2px solid #EEEBE6;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.tab {
+  padding: 0 2px 8px;
+  margin: 0 25px;
+  display: inline;
+}
+
+.tab:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.tab:last-of-type {
+  margin-right: 0;
+}
+
+.handle-label {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 2px;
+  line-height: 1.4;
+  border-color: #D5D0C8;
+  resize: none;
+  margin-top: 15px;
+}
+
+.event-button {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7px;
 }

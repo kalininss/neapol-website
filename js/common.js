@@ -1,5 +1,33 @@
 $(document).ready(function() {
 
+  //табы
+  $(".tab_item").not(":first").hide();
+  $(".wrapper .tab").click(function() {
+    if ($(this).hasClass("active") && $(document).width() <= 520) {
+      $(this).parent().find(".tab").fadeIn();
+    } else {
+      $(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+      if ($(document).width() <= 520) { 
+        $(".wrapper .tab").each(function(i,elem) {
+          if ( !$(this).hasClass("active") ) {
+            $(this).fadeOut(); 
+          }
+        })
+      }
+      $(".tab_item").hide().eq($(this).index()).fadeIn();
+    }
+  }).eq(0).addClass("active");
+
+  //Кастомный выбор файла (вывод названия файла)
+  $('.custom-file-input').on('change', function() {
+    realVal = $(this).val();
+    lastIndex = realVal.lastIndexOf('\\') + 1;
+    if(lastIndex !== -1) {
+       realVal = realVal.substr(lastIndex);
+       $(this).prev('.mask').find('.file-name').val(realVal);
+    }
+  });
+  
   //запуск fancybox
   $(".fancybox").fancybox();
 
