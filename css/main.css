@@ -156,6 +156,10 @@ body.down .header__fixed.clone {
   height: 36px;
 }
 
+.article {
+  margin-bottom: 50px;
+}
+
 .button {
   margin: 0;
   padding: 0;
@@ -2370,8 +2374,9 @@ input:focus {
   display: inline-block;
 }
 
-.article {
+.article_news {
   padding-bottom: 10px;
+  margin-bottom: 0;
   border-bottom: 1px dotted #b3a6a6;
 }
 
@@ -2414,4 +2419,138 @@ input:focus {
 .pagination__btn {
   margin-top: 33px;
   padding: 0 20px;
+}
+
+.widget__title {
+  color: #bf9f60;
+  font-family: "Cambria", serif;
+  margin-top: 0;
+  border-bottom: 2px solid #D8D3CB;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.link_addr {
+  font-family: "OpenSansSemiBold", sans-serif;
+  color: #77282a;
+  padding: 7px 17px 7px 15px;
+  display: inline-block;
+}
+
+.link_addr:hover {
+  color: #bf9f60;
+  text-decoration: none;
+}
+
+.list_active__item_active {
+  background-color: #77282a;
+  color: #bf9f60;
+}
+
+.widget {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.widget__mark {
+  background-image: url(../img/sprite.png);
+  background-position: -239px -45px;
+  width: 32px;
+  height: 18px;
+  position: absolute;
+  top: 32px;
+  left: 15%;
+}
+
+.pagination__btn {
+  display: block;
+}
+
+.article_market {
+  border: none;
+}
+
+.article__title {
+  font-size: 28px;
+  color: #77282a;
+  margin-top: 0;
+}
+
+.sidebar_market {
+  margin-top: 12px;
+}
+
+.article__fotorama .fotorama__nav {
+  text-align: left;
+}
+
+.market-info {
+  margin-bottom: 20px;
+}
+
+.market-info .icon {
+  vertical-align: initial;
+  margin-bottom: -2px;
+}
+
+.icon_time-sm {
+  background-position: -488px -108px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon_wallet-sm {
+  background-position: -508px -108px;
+  width: 17px;
+  height: 15px;
+}
+
+.icon_phone-sm {
+  background-position: -531px -109px;
+  width: 16px;
+  height: 16px;
+}
+
+.market-info__title {
+  color: #bf9f60;
+  margin-bottom: -7px;
+}
+
+.article_market {
+  margin-bottom: 70px;
+}
+
+.article h2 {
+  font-size: 28px;
+}
+
+.full-name {
+  display: block;
+  margin-left: -3px;
+  margin-top: 20px;
+}
+
+.director-block {
+  position: relative;
+}
+
+.achievements__icon {
+  background-image: url(../img/sprite.png);
+  margin: 0 auto;
+  height: 96px;
+  width: 100px;
+}
+
+.achievements__icon_jewel {
+  background-position: -1023px -1px;
+}
+
+.achievements__icon_star {
+  background-position: -1126px -1px;
+}
+
+.achievements__title {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

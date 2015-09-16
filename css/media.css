@@ -198,6 +198,9 @@
 		width: -webkit-calc(33% - 30px);
 		width: calc(33% - 30px);
 	}
+	.article_market {
+		margin-bottom: 30px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -444,6 +447,10 @@
 	}
 	.payment__header {
 		margin-top: 10px;
+	}
+	.market-info .col-xs-4 {
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -743,7 +750,15 @@
 	.pagination__btn {
 		margin: 25px auto 0;
 		display: block;
-
+	}
+	.widget_place-list {
+		width: 100%;
+	}
+	.fotorama.article__fotorama .fotorama__nav--thumbs .fotorama__nav__frame {
+		padding: 8px;
+	}
+	.director-block > div {
+		width: 100%;
 	}
 }
 
@@ -758,7 +773,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	
+.director-block__info {
+	margin-top: -5px;
+}
 }
 
 

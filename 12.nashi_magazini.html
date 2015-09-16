@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+	<link rel="stylesheet" href="libs/fotorama/fotorama.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" media="screen">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/modernizr/modernizr.js"></script>
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/jssor-slider/jssor.slider.mini.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/fotorama/fotorama.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script src="js/common.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Start header -->
+	<header class="header">
+
+		<div class="header__fixed">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<!-- Start fixed -->
+						<div class="fixed">
+
+							<div class="fixed__search">
+								<form class="search">
+									<input type="text" class="search__input" placeholder="Искать: например, торты">
+									<button class="button search__button"></button>
+								</form>
+							</div>
+
+							<div class="fixed__user-info">
+								<div class="user-info">
+									<div class="user-info__auth">
+										<a href="#" class="auth__login"><span class="icon icon__user"></span><span class="login__text">Вход</span></a>
+										<span class="divide">|</span>
+										<a href="#" class="auth__registration"><span class="registration__text">Регистрация</span></a>
+									</div>
+									<div class="user-info__compare">
+										<a href="#" class="compare">
+											<span class="icon icon__scale"></span>
+											<span class="compare__text">Сравнение</span><span class="divide">|</span>7
+										</a>
+									</div>
+									<div class="user-info__cart">
+										<a href="#" class="cart">
+											<span class="icon icon__cart"></span>
+											<span class="cart__text">Корзина</span><span class="divide">|</span>25 шт.
+										</a>
+									</div>
+									<a href="#" class="mobile-menu__button"></a>
+								</div>
+							</div>
+
+						</div>
+						<!-- End fixed -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header__menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="menu__logo">
+							<a href="#" class="logo-main"><img src="img/logo-main.jpg" alt="Логотип Неаполь"></a>
+						</div>
+						<nav class="menu__top">
+							<ul class="menu">
+								<div class="mobile-menu__title">Меню</div>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">О компании</a>
+									<ul class="submenu menu submenu_top">
+										<li class="submenu__item"><a href="#" class="submenu__link">Новости</a></li>
+										<li class="submenu__item"><a href="#" class="submenu__link">Отзывы</a></li>
+									</ul>
+								</li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши магазины</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Информация для покупателей</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Оплата и доставка</a></li>
+								<li class="menu__item"><a class="menu__link top-menu__link" href="#">Наши контакты</a></li>
+								<div class="mobile-menu__exit"></div>
+							</ul>
+						</nav>
+
+						<nav class="menu__bottom">
+							<a href="#" class="mobile-menu_bottom">Ассортимент<span class="icon icon__arrow"></span></a>
+							<ul class="menu">
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кондитерские изделия</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Изделия на заказ</a>
+									<ul class="submenu menu submenu_bottom">
+										<div class="submenu__list">
+											<li class="submenu__item"><a href="#" class="submenu__link">Пирожные</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Пироги</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Маффины</a></li>	
+											<li class="submenu__item"><a href="#" class="submenu__link">Торты</a></li>	
+										</div>
+										<img src="../img/submenu-img.jpg" alt="" class="submenu__image">
+									</ul>
+								</li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Хлебобулочные изделия</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Кулинария</a></li>
+								<li class="menu__item"><a href="#" class="menu__link bot-menu__link">Заказать на мероприятие</a></li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- End header -->
+
+	<!-- Start 	content-page -->
+	<main class="main-content main-content_strip">
+		<section class="order-catalog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h1>Наши магазины</h1>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-9 col-md-push-3">
+
+						<!-- Start article -->
+						<article class="article article_market">
+
+							<h2 class="article__title">Красный проспект, 18</h2>
+							<div class="fotorama article__fotorama" 
+							data-nav="thumbs"  
+							data-thumbmargin="24" 
+							data-thumbborderwidth="0"
+							data-fit="cover"
+							data-arrows="false"
+							data-width="100%"
+							data-thumbwidth="91"
+							data-thumbheight="74" >
+							<a href="img/big-kitchen.jpg"><img src="img/street-view.jpg"></a>
+							<a href="img/big-kitchen.jpg"><img src="img/street-view.jpg"></a>
+							<a href="img/big-kitchen.jpg"><img src="img/street-view.jpg"></a>
+						</div>
+
+						<p>Место с особой атмосферой. Заглянуть по ходу праздной городской прогулки, приехать специально — каким бы образом ни попал сюда гость, он неизменно будет очарован аурой праздника, духом радостного детского азарта. Так ведь и выглядит съедобное счастье в детских грезах — от тортов-гигантов до ювелирно изящных пирожных. В «архитектуре» этой сладкой страны нет ничего «типового»: все изделия авторские, созданные под руководством шеф-кондитера ресторана Неаполь.</p>
+
+						<div class="market-info row">
+							<div class="col-xs-4">
+								<h3 class="market-info__title"><span class="icon icon_time-sm"></span>Время работы:</h3>
+								<h3>Пн-Пт: 9:00 - 20:00<br>
+									Сб-Вск: 9:00 - 19:00</h3>
+								</div>
+								<div class="col-xs-4">
+									<h3 class="market-info__title"><span class="icon icon_wallet-sm"></span>Способ оплаты:</h3>
+									<h3>Наличный расчет,<br>
+										банковские карты</h3>
+									</div>
+									<div class="col-xs-4">
+										<h3 class="market-info__title"><span class="icon icon_phone-sm"></span>Телефоны:</h3>
+										<h3>(383) 356-33-33<br>
+											(383) 356-33-33</h3>
+										</div>
+									</div>
+
+									<img src="img/neapol-map.jpg" alt="">
+
+								</article>
+								<!-- End article -->
+
+							</div>
+							<div class="col-sm-12 col-md-3 col-md-pull-9">
+
+								<!-- Start sidebar -->
+								<aside class="row sidebar_market">
+
+									<!-- Start widget -->
+									<div class="widget widget_place-list col-xs-6 col-md-12">
+										<h3 class="widget__title">Левый берег:</h3>
+										<div class="widget__mark"></div>
+										<ul class="list_clean list_active">
+											<li class="list_active__item"><a class="link_addr" href="#">- Котовского, 48</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Д.Ковальчук, 15</a></li>
+											<li class="list_active__item list_active__item_active link_addr">- Красный проспект, 18</li>
+											<li class="list_active__item"><a class="link_addr" href="#">- О.Жилиной, 14</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Котовского, 48</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Д.Ковальчук, 15</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Красный проспект, 18</a></li>
+										</ul>
+									</div>
+									<!-- End widget -->
+
+									<!-- Start widget -->
+									<div class="widget widget_place-list col-xs-6 col-md-12">
+										<h3 class="widget__title">Правый берег:</h3>
+										<div class="widget__mark"></div>
+										<ul class="list_clean list_active">
+											<li class="list_active__item"><a class="link_addr" href="#">- Котовского, 48</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Д.Ковальчук, 15</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Красный проспект, 18</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- О.Жилиной, 14</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Котовского, 48</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Д.Ковальчук, 15</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Красный проспект, 18</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Котовского, 48</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Д.Ковальчук, 15</a></li>
+											<li class="list_active__item"><a class="link_addr" href="#">- Красный проспект, 18</a></li>
+										</ul>
+									</div>
+									<!-- End widget -->
+
+								</aside>
+								<!-- End sidebar -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- End 	content-page -->
+
+		<!-- Start footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-4 col-xs-6 right-padding-none">
+
+						<nav class="footer__category clearfix">
+							<div class="menu__left">
+								<ul class="menu">
+									<li class="menu__item"><a class="menu__link" href="#">Кондитерские изделия</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Индивидуальный заказ</a></li>
+								</ul>
+							</div>
+
+							<div class="menu__right">
+								<ul class="menu">
+									<li class="menu__item"><a class="menu__link" href="#">Хлебобулочные изделия</a></li>
+									<li class="menu__item"><a class="menu__link" href="#">Кулинария</a></li>
+								</ul>
+							</div>
+
+							<div class="mark__white"></div>
+						</nav>
+
+						<div class="footer__info">
+							<p>Новосибирск, Петухова, 63/2</p>
+							<p>+7 (383) 354-90-40  |  354-90-46</p>
+							<a href="mailto:neapol@mail.ru">neapol@mail.ru</a>
+							<p class="copyright">© 2005-2015. Неаполь. Все права защищены.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6 md-non-padding">
+
+						<nav class="footer__menu">
+							<ul class="menu">
+								<li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Наши магазины</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Информация для покупателей</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Оплата и доставка</a></li>
+								<li class="menu__item"><a class="menu__link" href="#">Контактная информация</a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-md-3 col-xs-12 col-sm-4 md-non-padding">
+						<div class="footer__search">
+							<form class="search">
+								<input type="text" class="search__input" placeholder="Искать: например, торты">
+								<button class="button search__button"></button>
+							</form>
+						</div>
+						<div class="footer__social">
+							<p>Неаполь в социальных сетях:</p>
+							<a href="#" class="soc-icon soc-icon__vk"></a>
+							<a href="#" class="soc-icon soc-icon__fb"></a>
+						</div>
+						<div class="footer__h2o">Разработано в <a href="#">h2o-design</a></div>
+					</div>
+				</div>
+			</div>
+			<p class="copyright_mobile">© 2005-2015. Неаполь. Все права защищены.</p>
+		</footer>
+		<!-- End footer -->
+
+		<div class="hidden"></div>
+
+		<div class="loader">
+			<div class="loader_inner"></div>
+		</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	
+</body>
+</html>
