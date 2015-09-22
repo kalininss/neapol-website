@@ -201,6 +201,44 @@
 	.article_market {
 		margin-bottom: 30px;
 	}
+	.menu-item_control {
+		margin-left: 30px;
+	}
+	.menu-item_control_short {
+		margin-left: 15px;
+	}
+	.table__head {
+		display: none;
+	}
+	.sum__text,
+	.sum__cost {
+		text-align: right;
+		display: block;
+	}
+	.table_order .row {
+		line-height: 3;
+	}
+	.sum__text,
+	.sum__cost {
+		line-height: 40px;
+	}
+	.col_center {
+		text-align: right;
+	}
+	.cabinet-head__title-info {
+		margin-top: 0;
+		margin-bottom: 15px;
+		clear: both;
+	}
+	.col_mobile {
+		clear: both;
+	}
+	.table_checkout .col-sm-4 {
+		text-align: right;
+	}
+	.table_checkout .col-sm-3 {
+		text-align: center;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -339,6 +377,21 @@
 	.pagination__lonely_prev {
 		margin-right: 0;
 	}
+	.panel_list__item {
+		width: 33%;
+	}
+	.menu-list__text {
+		display: none;
+	}
+	.menu-item_control {
+		margin-left: 20px;
+	}
+	.menu-item_control_short {
+		margin-left: 10px;
+	}
+	.table_order .row {
+		margin-bottom: 10px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -452,6 +505,12 @@
 		width: 100%;
 		text-align: center;
 	}
+	.table_order .row > .col-sm-11 {
+		line-height: 2;
+	}
+	.cabinet_link {
+		margin-right: 15px;
+	}
 }
 
 
@@ -508,6 +567,13 @@
 		-ms-transform: scale(0.6);
 		-o-transform: scale(0.6);
 		transform: scale(0.6);
+	}
+	.panel_list__item {
+		width: 50%;
+	}
+	.input {
+		padding-left: 8px;
+		padding-right: 10px;
 	}
 }
 /* Extra Small Devices, Phones */
@@ -760,6 +826,80 @@
 	.director-block > div {
 		width: 100%;
 	}
+	.panel_list__item {
+		width: 100%;
+	}
+	.panel_list {
+		border: none;
+		margin: 15px 0;
+		padding: 0;
+	}
+	.manager-orders__body {
+		margin-bottom: 70px;
+	}
+	.search__input_secret {
+		display: none;
+	}
+	.fixed__left,
+	.fixed__right {
+		line-height: 50px;
+	}
+	.input {
+		line-height: 1.5;
+	}
+	.menu-item_control {
+		margin-left: 15px;
+	}
+	.menu-item_control_short {
+		margin-left: 15px;
+	}
+	.panel_list {
+		display: none;
+		background-color: #f4f2ee;
+		margin: 0;
+	}
+	.manager-orders__body {
+		margin-top: 20px;
+	}
+	.panel_list__item {
+		font-size: 15px;
+		padding: 5px 20px 7px;
+	}
+	.table_order .row > div {
+		padding: 0;
+	}
+	.table_order .row > .col-sm-11 {
+		line-height: 1.5;
+		margin-left: 15px;
+	}
+	.cabinet_link {
+		margin-right: 5px;
+		font-size: 13px;
+		padding: 3px 0;
+	}
+	.cabinet-head__title {
+		margin-top: 30px;
+	}
+	.cabinet-head {
+		margin-top: 0;
+	}
+	.checkout__footer {
+		text-align: center;
+	}
+	.btn_pay {
+		margin-top: 15px;
+		margin-left: 0;
+		width: 100%;
+	}
+	.table_order .product-count {
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.price_one {
+		display: block;
+		width: 90px;
+	}
 }
 
 
@@ -774,9 +914,9 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 	
-.director-block__info {
-	margin-top: -5px;
-}
+	.director-block__info {
+		margin-top: -5px;
+	}
 }
 
 
@@ -805,8 +945,18 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.copyright_mobile {
+	.copyright_mobile,
+	.order-label_mobile {
 		display: none;
+	}
+	.table_order .col-md-1,
+	.table_order .col-md-2 {
+		padding: 0;
+		text-align: center;	
+	}
+	.cabinet-head__title-info {
+		float: right;
+		margin-top: 59px;
 	}
 }
 

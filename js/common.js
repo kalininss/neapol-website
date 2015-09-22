@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+  //
+  $(".table .row").click(function(){
+    $(this).find(".row__footer").slideToggle(200);
+  });
+
   //табы
   $(".tab_item").not(":first").hide();
   $(".wrapper .tab").click(function() {
