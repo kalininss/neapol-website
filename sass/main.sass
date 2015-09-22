@@ -1912,3 +1912,33 @@ input:focus
 		line-height: 1.2
 		display: inline-block
 		vertical-align: middle
+.cabinet-head_simple
+	border: none
+.table_order-list
+	line-height: 58px
+	text-align: center
+	color: $brown
+	.row
+		margin: 0
+		border-bottom: 2px solid #E4DFD6
+		&>div:nth-child(1),
+		&>div:nth-child(2)
+			text-align: left
+	.table__head
+		color: $text
+.order-list
+	margin-bottom: 70px
+.order-list__search
+	position: static
+	border: none
+	vertical-align: middle
+	background-position: -97px -1px
+	&:hover
+		background-position: -97px -26px
+.order-lists_refresh
+	@extend .icon_refresh
+	background-image: url(../img/sprite.png)
+	background-color: transparent
+	&:hover
+		background-position: -691px -105px
+	outline: none

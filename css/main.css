@@ -2593,7 +2593,7 @@ input:focus {
   margin-top: -2px;
 }
 
-.icon_refresh {
+.icon_refresh, .order-lists_refresh {
   background-position: -609px -105px;
   width: 17px;
   height: 19px;
@@ -2927,4 +2927,53 @@ input:focus {
   line-height: 1.2;
   display: inline-block;
   vertical-align: middle;
+}
+
+.cabinet-head_simple {
+  border: none;
+}
+
+.table_order-list {
+  line-height: 58px;
+  text-align: center;
+  color: #77282a;
+}
+
+.table_order-list .row {
+  margin: 0;
+  border-bottom: 2px solid #E4DFD6;
+}
+
+.table_order-list .row > div:nth-child(1),
+.table_order-list .row > div:nth-child(2) {
+  text-align: left;
+}
+
+.table_order-list .table__head {
+  color: #806b6b;
+}
+
+.order-list {
+  margin-bottom: 70px;
+}
+
+.order-list__search {
+  position: static;
+  border: none;
+  vertical-align: middle;
+  background-position: -97px -1px;
+}
+
+.order-list__search:hover {
+  background-position: -97px -26px;
+}
+
+.order-lists_refresh {
+  background-image: url(../img/sprite.png);
+  background-color: transparent;
+  outline: none;
+}
+
+.order-lists_refresh:hover {
+  background-position: -691px -105px;
 }

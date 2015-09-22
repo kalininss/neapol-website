@@ -239,6 +239,12 @@
 	.table_checkout .col-sm-3 {
 		text-align: center;
 	}
+	.table_order-list .table__head {
+		display: block;
+	}
+	.table_order-list .row > div {
+		padding: 0;
+	}
 }
 
 /* Small Devices, Tablets */
