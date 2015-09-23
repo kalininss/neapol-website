@@ -1,6 +1,20 @@
 $(document).ready(function() {
 
-  //
+  // bind event handlers to modal triggers
+  $('body').on('click', '[data-modal-open]', function(e){
+    e.preventDefault();
+    var modalOpen = $(this).data('modal-open');//определяем имя вызываемого окна
+    $('[data-modal=' + modalOpen + ']').modal().open();//открываем нужное окно
+    $(".themodal-overlay .modal").after('<div class="helper"></div>');//блок для выравнивания
+  });
+
+  // attach modal close handler
+  $('.modal .close').on('click', function(e){
+    e.preventDefault();
+    $.modal().close();
+  });
+
+  //Раскрытие для таблицы
   $(".table .row").click(function(){
     $(this).find(".row__footer").slideToggle(200);
   });
@@ -67,8 +81,7 @@ $(document).ready(function() {
     $input.val(count);
     $input.change();
     return false;
-  });
- 
+  }); 
  
   //fixed header
   var $header = $(".header__fixed"),
@@ -87,6 +100,7 @@ $(document).ready(function() {
   $(".mobile-menu__exit").click(function(){
     $(".clone-menu").fadeOut();
   });
+
   //Стрелка на мобильном ассортименте
   $(".mobile-menu_bottom").click(function(){
     $(this).toggleClass("rotate");
@@ -99,7 +113,6 @@ $(document).ready(function() {
     $(".fixed__search .search__button").click(function(){
       if ( $(this).prev().width() == 0 ) {
         $(this).animate({"right": "0px"}, 400).prev().animate({"width": "223px"}, 400).focus();
-
         return false;
       }
     });
@@ -111,23 +124,6 @@ $(document).ready(function() {
     });
   }
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
-
-	};
-
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
-});
-
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
 });

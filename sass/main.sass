@@ -10,30 +10,6 @@ $regular: "OpenSansRegular", sans-serif
 $semibold: "OpenSansSemiBold", sans-serif
 $bold: "OpenSansBold", sans-serif
 
-html.js .loader
-	background: none repeat scroll 0 0 #ffffff
-	bottom: 0
-	height: 100%
-	left: 0
-	position: fixed
-	right: 0
-	top: 0
-	width: 100%
-	z-index: 9999
-	.loader_inner
-		background-image: url("../img/preloader.gif")
-		background-size: cover
-		background-repeat: no-repeat
-		background-position: center center
-		background-color: #fff
-		height: 60px
-		width: 60px
-		margin-top: -30px
-		margin-left: -30px
-		left: 50%
-		top: 50%
-		position: absolute
-
 body
 	font-family: $regular
 	color: $text
@@ -44,13 +20,6 @@ body
 	line-height: 1.6
 	-webkit-font-smoothing: antialised
 	overflow-x: hidden
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: red
-body input:required:valid,
-body textarea:required:valid
-	color: green
 
 .hidden
 	display: none
@@ -103,7 +72,7 @@ a.reverse
 	transition: 0.5s top ease-in
 	top: -200px
 	width: 100%
-	z-index: 999
+	z-index: 99
 	left: 0
 body.down .header__fixed.clone 
 	top: 0
@@ -1942,3 +1911,77 @@ input:focus
 	&:hover
 		background-position: -691px -105px
 	outline: none
+/* modal box style, can be anything you want */
+.modal
+	display: inline-block
+	vertical-align: middle
+	max-width: 650px
+	width: 80%
+.modal__inner
+	background: #fff
+	padding: 30px 27px
+	margin-top: 40px
+	margin-bottom: 15px
+.modal .close 
+	right: -30px
+	top: -13px
+	position: absolute
+	text-decoration: none
+	font-size: 40px
+	cursor: pointer
+	color: #fff
+	&:hover
+		color: $gold
+		transition: 0.1s linear
+.themodal-overlay
+	text-align: center
+.panel_modal .panel__mark
+	bottom: 27px
+.icon__key
+	background-position: -713px -108px
+	width: 14px
+	height: 13px
+	vertical-align: middle
+	margin-top: 7px
+.form_simple
+	.icon__user
+		margin-top: 3px
+		position: absolute
+		margin-left: -25px
+	.icon__key
+		position: absolute
+		margin-left: -22px
+.input-line
+	position: relative
+	margin: 7px 0
+.form__input
+	border-radius: 2px
+	padding: 2px 5px
+	font-family: $title
+	border: 1px solid #D5D0C8
+	font-size: 16px
+	width: 100%
+	color: $text	
+.form_simple
+	max-width: 228px
+	margin: 0 auto
+	text-align: left
+.form__btn_simple
+	width: 100%
+	margin-top: 15px
+	padding-left: 0
+	padding-right: 0
+.miss-pass
+	float: right
+	text-decoration: underline
+	color: $text
+	&:hover
+		text-decoration: none
+		color: $text
+.panel__title_modal
+	margin-top: 0
+.helper
+	display: inline-block
+	width: 0
+	height: 100%
+	vertical-align: middle

@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" media="screen">
 	<link rel="stylesheet" href="libs/nouislider//nouislider.min.css" media="screen">
 	<link rel="stylesheet" href="libs/nouislider/nouislider.pips.css" media="screen">
+	<link rel="stylesheet" href="libs/the-modal/the-modal.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -43,6 +44,8 @@
 	<script src="libs/fotorama/fotorama.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/nouislider/nouislider.min.js"></script>
+	<script src="libs/the-modal/jquery.the-modal.js"></script>
+
 	
 	<script src="js/common.js"></script>
 
@@ -71,9 +74,9 @@
 							<div class="fixed__user-info">
 								<div class="user-info">
 									<div class="user-info__auth">
-										<a href="#" class="auth__login"><span class="icon icon__user"></span><span class="login__text">Вход</span></a>
+										<a href="#" data-modal-open="auth" class="auth__login"><span class="icon icon__user"></span><span class="login__text">Вход</span></a>
 										<span class="divide">|</span>
-										<a href="#" class="auth__registration"><span class="registration__text">Регистрация</span></a>
+										<a href="#" data-modal-open="reg" class="auth__registration"><span class="registration__text">Регистрация</span></a>
 									</div>
 									<div class="user-info__compare">
 										<a href="#" class="compare">
@@ -149,6 +152,61 @@
 			</div>
 		</div>
 
+		<div class="modal" data-modal="auth" style="display: none">
+			<div class="modal__inner">
+				<a href="#" class="close">×</a>
+				<div class="panel panel_modal">
+					<h2 class="panel__title_modal">Вход</h2>
+					<form class="form form_simple">
+						<p class="input-line">
+							<i class="icon icon__user"></i>
+							<input required name="login" type="text" class="form__input">
+						</p>
+						<p class="input-line">
+							<i class="icon icon__key"></i>
+							<input required name="password" type="password" class="form__input">
+						</p>
+						<a href="#" class="miss-pass">Забыли пароль?</a>
+						<button class="btn form__btn_simple">Войти</button>
+					</form>
+					<div class="panel__mark"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" data-modal="reg" style="display: none">
+			<div class="modal__inner">
+				<a href="#" class="close">×</a>
+				<div class="panel panel_modal">
+					<h2 class="panel__title_modal">Регистрация</h2>
+					<form class="form form_simple">
+						<p class="input-line">
+							<label class="form__label" for="name">Имя</label>
+							<input id="name" required name="login" type="text" class="form__input">
+						</p>
+						<p class="input-line">
+							<label class="form__label" for="second-name">Фамилия</label>
+							<input id="second-name" required name="second-name" type="text" class="form__input">
+						</p>
+						<p class="input-line">
+							<label class="form__label" for="mail">Почта</label>
+							<input id="mail" required name="mail" type="email" class="form__input">
+						</p>
+						<p class="input-line">
+							<label class="form__label" for="password">Пароль</label>
+							<input id="password" required name="password" type="password" class="form__input">
+						</p>
+						<p class="input-line">
+							<label class="form__label" for="repeat-password">Повторите пароль</label>
+							<input id="repeat-password" required name="repeat-password" type="password" class="form__input">
+						</p>
+						<button class="btn form__btn_simple">Зарегистрироваться</button>
+					</form>
+					<div class="panel__mark"></div>
+				</div>
+			</div>
+		</div>
+
 	</header>
 	<!-- End header -->
 
@@ -163,8 +221,8 @@
 						<div class="slider main-slider" id="main-slider" style="position: relative; top: 0px; left: 0px; width: 656px; height: 385px;">
 							<!-- Slides Container -->
 							<div data-u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 656px; height: 385px;">
-								<div><img alt="" data-u="image" src="img/big-slide-cake.jpg" /></div>
-								<div><img alt="" data-u="image" src="img/big-slide-cake.jpg" /></div>
+								<div><a href="#" data-u="image"><img alt="" src="img/big-slide-cake.jpg" /></a></div>
+								<div><a href="#" data-u="image"><img alt="" src="img/big-slide-cake.jpg" /></a></div>
 							</div>
 							<span data-u="arrowleft" class="arrow__left arrow" style="top: 180px; left: 20px;"></span>
 							<span data-u="arrowright" class="arrow__right arrow" style="top: 180px; right: 20px;"></span>
@@ -731,19 +789,12 @@
 </footer>
 <!-- End footer -->
 
-<div class="hidden"></div>
-
-<div class="loader">
-	<div class="loader_inner"></div>
-</div>
-
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	
-	
+
 </body>
 </html>
