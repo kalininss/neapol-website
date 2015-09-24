@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+  //списки в кабинете торговой точки
+  $(".open-group__btn").click(function(){
+    $(this).toggleClass("opened").next().slideToggle().find(".open-group__body").slideUp().prev().removeClass("opened");
+  });
+  //развернуть всё
+  $(".roll_down").click(function(){
+    $(".open-group__btn").addClass("opened").next().slideDown();
+  });
+  //свернуть всё
+  $(".roll_up").click(function(){
+    $(".open-group__btn").removeClass("opened").next().slideUp();
+  });
+
   // bind event handlers to modal triggers
   $('body').on('click', '[data-modal-open]', function(e){
     e.preventDefault();

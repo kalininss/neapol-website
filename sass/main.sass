@@ -47,11 +47,13 @@ h5, .h5
 	font-size: 13px
 
 a
+	outline: none
 	color: $brown
 	&:hover
 		color: $gold
 	&:focus
 		color: $brown
+		outline: none
 	&:active
 		color: $brown
 
@@ -64,6 +66,9 @@ a.reverse
 	&:active
 		color: $brown
 
+::-ms-clear
+	width : 0
+	height: 0
 .header__fixed
 	background-color: $background
 	position: relative
@@ -545,6 +550,7 @@ p.copyright
 		font-family: $title
 .submenu__image
 	float: right
+	width: auto
 .submenu__list
 	float: left
 	width: 220px
@@ -644,7 +650,7 @@ p.copyright
 	width: 8px
 	height: 13px
 	margin-right: 8px
-	vertical-align: initial
+	vertical-align: baseline
 	margin-top: 2px
 .btn_back
 	padding: 0 11px
@@ -1384,7 +1390,7 @@ input:focus
 	padding: 10px 20px
 	border-radius: 2px
 	line-height: 1.4
-	border-color: #D5D0C8
+	border: 1px solid #D5D0C8
 .form-area_dotted
 	border-bottom: 2px dotted #d8d3cb
 .wrapper .active
@@ -1410,6 +1416,7 @@ input:focus
 .tab
 	padding: 0 2px 8px
 	margin: 0 25px
+	cursor: pointer
 	display: inline
 .tab:nth-of-type(1)
 	margin-left: 0
@@ -1420,7 +1427,7 @@ input:focus
 	padding: 10px 20px
 	border-radius: 2px
 	line-height: 1.4
-	border-color: #D5D0C8
+	border: 1px solid #D5D0C8
 	resize: none
 	margin-top: 15px
 .event-button
@@ -1680,12 +1687,16 @@ input:focus
 	background-position: -632px -106px
 	width: 19px
 	height: 18px
-	vertical-align: middle
+	vertical-align: text-bottom
 .menu-item_control
 	margin-left: 70px
 	vertical-align: middle
 	&:nth-child(1)
 		margin-left: 0
+	&.btn:nth-child(2)
+		margin-left: 15px
+.menu-item_control_small
+	margin-left: 30px
 .btn_icon
 	background-color: transparent
 	border: none
@@ -1922,9 +1933,10 @@ input:focus
 	padding: 30px 27px
 	margin-top: 40px
 	margin-bottom: 15px
+	position: relative
 .modal .close 
 	right: -30px
-	top: -13px
+	top: -50px
 	position: absolute
 	text-decoration: none
 	font-size: 40px
@@ -1935,8 +1947,10 @@ input:focus
 		transition: 0.1s linear
 .themodal-overlay
 	text-align: center
+.panel_modal
+	position: relative
 .panel_modal .panel__mark
-	bottom: 27px
+	bottom: -20px
 .icon__key
 	background-position: -713px -108px
 	width: 14px
@@ -1961,6 +1975,7 @@ input:focus
 	border: 1px solid #D5D0C8
 	font-size: 16px
 	width: 100%
+	line-height: 25px
 	color: $text	
 .form_simple
 	max-width: 228px
@@ -1985,3 +2000,152 @@ input:focus
 	width: 0
 	height: 100%
 	vertical-align: middle
+.btn_size_s
+	padding-left: 25px
+	padding-right: 25px
+.cabinet-head__subtitle
+	font-family: $title
+	font-size: 28px
+	color: $brown
+	margin-bottom: 20px
+.order-date
+	font-size: 20px
+	border: 1px solid #D5D0C8
+	display: inline-block
+	border-radius: 2px
+	padding: 0 10px
+.cabinet__title
+	font-size: 32px
+	margin-bottom: 0
+.icon_plus
+	font-family: $bold
+	font-size: 1.2em
+.link_continue_icon:hover
+	text-decoration: none
+.cabinet__title_v2
+	margin-top: 0
+.title__add-info
+	font-size: 24px
+	font-family: $title
+.fixed__left_full-xs
+	display: block
+	width: 100%
+.fixed__left_full-xs .search_masked
+	margin-left: 30px
+.header__cabinet
+	clear: both
+	line-height: 71px
+.btn_blef
+	@extend .btn
+	display: inline-block
+	background-color: $brown
+	color: #fff
+	padding-left: 20px
+	padding-right: 20px
+.link_icon_cube
+	margin-left: 15px
+	display: inline-block
+	&:hover
+		text-decoration: none
+.roll-group
+	float: right
+.roll
+	display: inline-block
+	color: $brown
+	cursor: pointer
+	margin-left: 46px
+	&:hover
+		color: $gold
+		text-decoration: none
+		.icon_arrow_down
+			background-position: -743px -114px
+		.icon_arrow_up
+			background-position: -743px -107px
+.icon_arrow_down,
+.icon_arrow_up
+	width: 13px
+	height: 7px
+	vertical-align: middle
+	margin-bottom: 2px
+.icon_arrow_down
+	background-position: -730px -114px
+.icon_arrow_up
+	background-position: -730px -107px
+.open-group__body
+	display: none
+.open-group__btn_inner
+	margin-left: 20px
+	color: $brown
+	font-family: $bold
+	padding: 0 0 10px 
+.open-group__btn_main
+	font-size: 16px
+	color: $gold
+	font-family: $bold
+	padding: 10px 0
+.icon_arrow_vertical_brown
+	background-position: -730px -114px
+	width: 13px
+	height: 7px
+	vertical-align: middle
+.icon_arrow_vertical_gold
+	background-position: -743px -114px
+	width: 13px
+	height: 7px
+	vertical-align: middle	
+.open-group__btn
+	display: inline-block
+	cursor: pointer
+	&.opened .icon_arrow_vertical_brown
+		background-position: -730px -107px
+	&.opened .icon_arrow_vertical_gold
+		background-position: -743px -107px
+nav > .open-group
+	border-bottom: 1px dotted #d8d3cb 
+	& > .open-group__body
+		margin-bottom: 5px
+.open-group__body .open-group__body > div
+	margin: 10px 0 30px
+.market_order
+	margin-bottom: 70px
+.table-group
+	font-size: 0
+.table_half
+	width: 50%
+	font-size: 14px
+	display: inline-block
+	vertical-align: top
+	.row
+		margin: 0 3px 6px 0
+		background-color: #F8F7F4
+		padding: 6px 5px 5px
+		border: 2px solid #F8F7F4
+		border-bottom: 2px solid #E4DFD6
+		&.active,
+		&:hover
+			border-color: $brown
+		cursor: pointer
+	.table__head
+		padding: 22px 0
+		margin-left: 0
+		margin-right: 0
+		cursor: initial
+		&:hover
+			border: 2px solid #F8F7F4
+			border-bottom: 2px solid #E4DFD6
+	.delete_link
+		margin: 15px 0 19px
+		display: inline-block
+	.link_bold
+		line-height: 0.8
+		vertical-align: text-bottom
+	&:nth-child(2n)
+		.row
+			margin-right: 0
+			margin-left: 3px
+		.table__head
+			margin-left: 0
+.col-half__img
+	padding: 0
+.table
+	font-size: 14px

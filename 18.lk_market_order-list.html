@@ -57,22 +57,18 @@
 						
 						<!-- Start fixed -->
 						<div class="fixed">
-
-							<div class="fixed__left menu-list">
-								<a href="#" class="link"><i class="icon icon_menu menu-item_control"></i><span class="menu-list__text">Все</span></a>
-								<a href="#" class="link menu-item_control"><i class="icon icon_code"></i><span class="menu-list__text">HTML</span></a>
+							<div class="fixed__left fixed__left_full-xs menu-list">
+								<button class="btn btn_size_s menu-item_control">Оформить заявку</button>
+								<button class="btn btn_size_s menu-item_control">Посмотреть заказ</button>
+								<a href="#" class="link menu-item_control_small"><i class="icon icon_menu menu-item_control"></i><span class="menu-list__text_md">Список заказов</span></a>
 								<form class="menu-item_control search search_masked">
-									<button class="btn_icon"><i class="icon icon_search"></i></button>
-									<input type="text" class="search__input search__input_secret" placeholder="Быстрый поиск">
-								</form>
-								<a href="#" class="link menu-item_control menu-item_control_short"><i class="icon icon_refresh"></i><span class="menu-list__text">Обновить</span></a>
-								<div class="input menu-item_control">5 из 13</div>
+									<button class="btn_icon"><i class="icon icon_search btn_icon_compact"></i></button>
+									<input type="text" class="search__input search__input_compact search__input_secret" placeholder="Искать...">
+								</form>	
+							<div class="fixed__right fixed__right_mobile">
+								<a href="#" class="link"><i class="icon icon_exit"></i><span class="menu-list__text_md">Выход</span></a>
+							</div>							
 							</div>
-
-							<div class="fixed__right">
-								<a href="#" class="link"><i class="icon icon_exit"></i><span class="menu-list__text">Выход</span></a>
-							</div>
-
 						</div>
 						<!-- End fixed -->
 
@@ -83,119 +79,104 @@
 
 	</header>
 	<!-- End header -->
-
+	
 	<!-- Start 	content-page -->
 	<main class="main-content">
-
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
+					<h1 class="title_size_2">Список заказов</h1>
+					<section class="order-list">
 
-					<!-- Start 	manager-orders -->
-					<section class="manager-orders">
-
-						<header>	
-							<div class="row">
-								<div class="col-md-3">
-									<h2 class="manager-orders__title">Все заказы</h2>
-								</div>
-								<div class="col-md-9">
-								<a href="#" class="mobile-menu_bottom open-panel-btn">Выбор точки:<span class="icon icon__arrow"></span></a>
-									<div class="panel_list">
-										<a href="#" class="panel_list__item">Блюхера, 34</a>
-										<a href="#" class="panel_list__item">К.Маркса, 14</a>
-										<a href="#" class="panel_list__item">Ветковского, 15</a>
-										<a href="#" class="panel_list__item">Костычева, 12</a>
-										<a href="#" class="panel_list__item">Станиславского, 12/1</a>
-										<a href="#" class="panel_list__item">Даргомыжского, 15</a>
-										<a href="#" class="panel_list__item">Блюхера, 34</a>
-										<a href="#" class="panel_list__item">К.Маркса, 14</a>
-										<a href="#" class="panel_list__item">Ветковского, 15</a>
-										<a href="#" class="panel_list__item">Костычева, 12</a>
-										<a href="#" class="panel_list__item">Станиславского, 12/1</a>
-									</div>
-								</div>
-							</div>
-						</header>
-
-						<div class="manager-orders__body table">
+						<!-- Start table -->
+						<div class="table table_order-list">
 							<div class="row table__head">
-								<div class="col-xs-1">№ п/п</div>
-								<div class="col-xs-3">Торговая точка</div>
-								<div class="col-xs-2">Заказ</div>
-								<div class="col-xs-2">Сумма</div>
-								<div class="col-xs-2">Комментарий</div>
-								<div class="col-xs-2">HTML</div>
+								<div class="col-xs-5 col-sm-3 col-md-2">№ заказа</div>
+								<div class="col-xs-4 col-sm-2">Дата<span class="order-list__desktop"> заказа</span></div>
+								<div class="col-xs-3 col-sm-2">Сумма<span class="order-list__desktop"> заказа</span></div>
+								<div class="col-xs-hidden col-xs-2 col-sm-3 col-md-2 col-md-offset-2"><span class="order-list__desktop">Посмотреть заказ</span>
+									<span class="order-list__mobile">Просмотр</span>
+								</div>
+								<div class="col-xs-hidden col-xs-1 col-sm-2"><span class="order-list__desktop">Повторить заказ</span>
+									<span class="order-list__mobile">Повтор</span>
+								</div>
 							</div>
 							<div class="row">
-								<header class="clearfix">
-									<div class="col-xs-1">1</div>
-									<div class="col-xs-3"><a href="#">Блюхера, 34</a></div>
-									<div class="col-xs-2">07.07.2015, 15.45</div>
-									<div class="col-xs-2 col_price">34700 <span class="rub">Р</span></div>
-									<div class="col-xs-2">Да</div>
-									<div class="col-xs-2">Заявка № 2345</div>
-								</header>
-								<footer class="row__footer clearfix">
-									<div class="col-xs-3 col-xs-offset-1">Сотрудник: Петрова Надежда<br>тел.раб.: 345-45-56<br>моб.: 8 913 546-45-43</div>
-									<div class="col-xs-4">Хлебобулочные: 12 700 <span class="rub">Р</span><br>Кондитерские: 0 <span class="rub">Р</span><br>Кулинария: 0 <span class="rub">Р</span></div>
-									<div class="col-xs-4">Приезжайте скорее у меня все закончилось.</div>
-								</footer>
+								<div class="col-xs-5 col-sm-3 col-md-2">
+									<div class="order-list_number">017658940Р 056</div>
+								</div>
+								<div class="col-xs-4 col-sm-2">
+									<div class="order-list__date"><span class="order-list__desktop">от </span>17.10.2015</div>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<span class="price_sum">15700 <span class="rub">Р</span></span>
+								</div>
+								<div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-2">
+									<button class="button search__button order-list__search"></button>
+								</div>
+								<div class="col-xs-6 col-sm-2">
+									<button class="button order-lists_refresh"></button>
+								</div>
 							</div>
 							<div class="row">
-								<header class="clearfix">
-									<div class="col-xs-1">2</div>
-									<div class="col-xs-3"><a href="#">Блюхера, 34</a></div>
-									<div class="col-xs-2">07.07.2015, 15.45</div>
-									<div class="col-xs-2 col_price">34700 <span class="rub">Р</span></div>
-									<div class="col-xs-2">Да</div>
-									<div class="col-xs-2">Заявка № 2345</div>
-								</header>
-								<footer class="row__footer clearfix">
-									<div class="col-xs-3 col-xs-offset-1">Сотрудник: Петрова Надежда<br>тел.раб.: 345-45-56<br>моб.: 8 913 546-45-43</div>
-									<div class="col-xs-4">Хлебобулочные: 12 700 <span class="rub">Р</span><br>Кондитерские: 0 <span class="rub">Р</span><br>Кулинария: 0 <span class="rub">Р</span></div>
-									<div class="col-xs-4">Приезжайте скорее у меня все закончилось.</div>
-								</footer>
+								<div class="col-xs-5 col-sm-3 col-md-2">
+									<div class="order-list_number">017658940Р 056</div>
+								</div>
+								<div class="col-xs-4 col-sm-2">
+									<div class="order-list__date"><span class="order-list__desktop">от </span>17.10.2015</div>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<span class="price_sum">15700 <span class="rub">Р</span></span>
+								</div>
+								<div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-2">
+									<button class="button search__button order-list__search"></button>
+								</div>
+								<div class="col-xs-6 col-sm-2">
+									<button class="button order-lists_refresh"></button>
+								</div>
 							</div>
 							<div class="row">
-								<header class="clearfix">
-									<div class="col-xs-1">3</div>
-									<div class="col-xs-3"><a href="#">Блюхера, 34</a></div>
-									<div class="col-xs-2">07.07.2015, 15.45</div>
-									<div class="col-xs-2 col_price">34700 <span class="rub">Р</span></div>
-									<div class="col-xs-2">Да</div>
-									<div class="col-xs-2">Заявка № 2345</div>
-								</header>
-								<footer class="row__footer clearfix">
-									<div class="col-xs-3 col-xs-offset-1">Сотрудник: Петрова Надежда<br>тел.раб.: 345-45-56<br>моб.: 8 913 546-45-43</div>
-									<div class="col-xs-4">Хлебобулочные: 12 700 <span class="rub">Р</span><br>Кондитерские: 0 <span class="rub">Р</span><br>Кулинария: 0 <span class="rub">Р</span></div>
-									<div class="col-xs-4">Приезжайте скорее у меня все закончилось.</div>
-								</footer>
+								<div class="col-xs-5 col-sm-3 col-md-2">
+									<div class="order-list_number">017658940Р 056</div>
+								</div>
+								<div class="col-xs-4 col-sm-2">
+									<div class="order-list__date"><span class="order-list__desktop">от </span>17.10.2015</div>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<span class="price_sum">15700 <span class="rub">Р</span></span>
+								</div>
+								<div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-2">
+									<button class="button search__button order-list__search"></button>
+								</div>
+								<div class="col-xs-6 col-sm-2">
+									<button class="button order-lists_refresh"></button>
+								</div>
 							</div>
 							<div class="row">
-								<header class="clearfix">
-									<div class="col-xs-1">4</div>
-									<div class="col-xs-3"><a href="#">Блюхера, 34</a></div>
-									<div class="col-xs-2">07.07.2015, 15.45</div>
-									<div class="col-xs-2 col_price">34700 <span class="rub">Р</span></div>
-									<div class="col-xs-2">Да</div>
-									<div class="col-xs-2">Заявка № 2345</div>
-								</header>
-								<footer class="row__footer clearfix">
-									<div class="col-xs-3 col-xs-offset-1">Сотрудник: Петрова Надежда<br>тел.раб.: 345-45-56<br>моб.: 8 913 546-45-43</div>
-									<div class="col-xs-4">Хлебобулочные: 12 700 <span class="rub">Р</span><br>Кондитерские: 0 <span class="rub">Р</span><br>Кулинария: 0 <span class="rub">Р</span></div>
-									<div class="col-xs-4">Приезжайте скорее у меня все закончилось.</div>
-								</footer>
+								<div class="col-xs-5 col-sm-3 col-md-2">
+									<div class="order-list_number">017658940Р 056</div>
+								</div>
+								<div class="col-xs-4 col-sm-2">
+									<div class="order-list__date"><span class="order-list__desktop">от </span>17.10.2015</div>
+								</div>
+								<div class="col-xs-3 col-sm-2">
+									<span class="price_sum">15700 <span class="rub">Р</span></span>
+								</div>
+								<div class="col-xs-6 col-sm-3 col-md-2 col-md-offset-2">
+									<button class="button search__button order-list__search"></button>
+								</div>
+								<div class="col-xs-6 col-sm-2">
+									<button class="button order-lists_refresh"></button>
+								</div>
 							</div>
 						</div>
+						<!-- End table -->
 
 					</section>
-					<!-- End 	manager-orders -->
 
 				</div>
 			</div>
 		</div>
-
 	</main>
 	<!-- End 	content-page -->
 
