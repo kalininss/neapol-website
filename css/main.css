@@ -1983,10 +1983,13 @@ input:focus {
   display: inline-block;
   width: 75%;
   float: right;
+  margin-top: 13px;
 }
 
 .noUi-pips-horizontal {
   top: -17px;
+  width: 100%;
+  left: -0.3%;
 }
 
 .noUi-pips {
@@ -1996,10 +1999,7 @@ input:focus {
 }
 
 .noUi-marker-horizontal.noUi-marker {
-  width: 19px;
-  height: 19px;
-  border: 2px solid #fff;
-  z-index: 1;
+  display: none;
 }
 
 .noUi-marker-horizontal {
@@ -2008,7 +2008,7 @@ input:focus {
 }
 
 .noUi-background {
-  background: #bf9f60;
+  background: #77282a;
 }
 
 .noUi-horizontal {
@@ -2022,17 +2022,31 @@ input:focus {
 }
 
 .noUi-origin {
-  background: #77282a;
+  background: #bf9f60;
 }
 
 .noUi-horizontal .noUi-handle {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #fff;
+  z-index: 1;
+  border: 2px solid white;
+  background-color: #77282a;
+  box-shadow: none;
+  border-radius: 0;
+  top: -8px;
+  cursor: e-resize;
+  left: -9.5px;
+}
+
+.noUi-horizontal .noUi-handle::before,
+.noUi-horizontal .noUi-handle::after {
   display: none;
 }
 
 .noUi-value-horizontal {
-  top: -12px;
+  top: -17px;
   padding-top: 0;
-  margin-left: -14px;
 }
 
 .labeled-checkbox_double {

@@ -660,6 +660,17 @@
 		line-height: 50px;
 		margin-top: 15px;
 	}
+	.weight-point__title {
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 40px;
+	}
+	.my-range {
+		width: 100%;
+		float: none;
+		display: block;
+		margin-bottom: 30px;
+	}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {

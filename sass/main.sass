@@ -1305,22 +1305,22 @@ input:focus
 	display: inline-block
 	width: 75%
 	float: right
+	margin-top: 13px
 .noUi-pips-horizontal
 	top: -17px
+	width: 100%
+	left: -0.3%
 .noUi-pips
 	font-size: 13px
 	font-family: $bold
 	color: $brown
 .noUi-marker-horizontal.noUi-marker
-	width: 19px
-	height: 19px
-	border: 2px solid #fff
-	z-index: 1
+	display: none
 .noUi-marker-horizontal
 	background-color: $gold
 	cursor: pointer
 .noUi-background
-	background: $gold
+	background: $brown
 .noUi-horizontal
 	height: 3px
 .noUi-target
@@ -1328,13 +1328,25 @@ input:focus
 	border: none
 	box-shadow: none
 .noUi-origin
-	background: $brown
+	background: $gold
 .noUi-horizontal .noUi-handle
-	display: none
+	width: 19px
+	height: 19px
+	border: 2px solid #fff
+	z-index: 1
+	border: 2px solid white
+	background-color: $brown
+	box-shadow: none
+	border-radius: 0
+	top: -8px
+	cursor: e-resize
+	left: -9.5px
+	&::before,
+	&::after
+		display: none
 .noUi-value-horizontal
-	top: -12px
+	top: -17px
 	padding-top: 0
-	margin-left: -14px
 .labeled-checkbox_double
 	width: 50%
 	display: inline-block
