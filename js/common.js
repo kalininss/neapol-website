@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+  //кнопка вверх
+  $(".top-button").hide();
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 400) {
+          $('.top-button').fadeIn();
+        } else {
+          $('.top-button').fadeOut();
+        }
+      });
+
+      $('.top-button').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+          }, 800);
+        return false;
+    });
+  });
+
   //списки в кабинете торговой точки
   $(".open-group__btn").click(function(){
     $(this).toggleClass("opened").next().slideToggle().find(".open-group__body").slideUp().prev().removeClass("opened");

@@ -1,6 +1,13 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1270px) {
+	.top-button {
+		display: none !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.top-menu__link {
 		padding: 0 8px;
@@ -459,6 +466,9 @@
 	}
 	.roll_down {
 		margin-left: 0;
+	}
+	.one-catalog-product:nth-child(3n-2) {
+		clear: none;
 	}
 }
 

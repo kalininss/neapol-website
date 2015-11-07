@@ -17,7 +17,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1, .h1 {
@@ -434,7 +434,6 @@ body.down .header__fixed.clone {
   border-bottom: 3px solid #bf9f60;
   background-color: #fff;
   padding: 15px 20px;
-  height: 96px;
 }
 
 .slider__img {
@@ -976,7 +975,7 @@ p.copyright {
 
 .item-title {
   display: inline-block;
-  max-width: 58%;
+  max-width: 45%;
 }
 
 .item-title h1 {
@@ -996,7 +995,7 @@ p.copyright {
   vertical-align: top;
   margin-top: 11px;
   float: right;
-  margin-right: 70px;
+  margin-right: 50px;
 }
 
 .product-detail__compare .compare__text {
@@ -1021,6 +1020,7 @@ p.copyright {
 
 .panel_descr {
   text-align: left;
+  position: relative;
   padding: 10px 20px;
   margin-top: 25px;
   border: 2px solid #77282a;
@@ -1034,7 +1034,7 @@ p.copyright {
 }
 
 .panel__mark_top {
-  top: 52px;
+  top: -32px;
 }
 
 .icon__small-trips {
@@ -1557,8 +1557,8 @@ p.copyright {
   display: inline-block;
   border-bottom: 2px solid;
   line-height: 0;
-  width: 20px;
-  height: 5px;
+  width: 19px;
+  height: 6px;
 }
 
 .slider .rub {
@@ -1638,8 +1638,8 @@ p.copyright {
   margin-top: 20px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+.filter input[type="checkbox"],
+.filter input[type="radio"] {
   display: none;
 }
 
@@ -1756,8 +1756,12 @@ input:focus {
   margin-bottom: 28px;
 }
 
-.one-catalog-product:nth-of-type(3n) {
+.one-catalog-product:nth-child(3n) {
   margin-right: 0;
+}
+
+.one-catalog-product:nth-child(3n-2) {
+  clear: left;
 }
 
 .catalog-items__parameters {
@@ -2297,6 +2301,7 @@ input:focus {
   margin-top: 3px;
   border-bottom: 3px solid #77282a;
   background-color: #f4f2ee;
+  vertical-align: top;
 }
 
 .caption-title {
@@ -3323,4 +3328,21 @@ nav > .open-group > .open-group__body {
 
 .table {
   font-size: 14px;
+}
+
+.top-button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 100px;
+  right: 50%;
+  margin-right: -620px;
+  background-image: url(../img/icon-button-top.png);
+  background-size: 50px;
+  cursor: pointer;
+}
+
+.row-divide {
+  clear: both;
+  content: '';
 }

@@ -299,7 +299,6 @@ body.down .header__fixed.clone
 	border-bottom: 3px solid $gold
 	background-color: #fff
 	padding: 15px 20px
-	height: 96px
 .slider__img
 	width: 314px !important
 	height: 201px !important
@@ -658,7 +657,7 @@ p.copyright
 		background-position: -315px -6px
 .item-title
 	display: inline-block
-	max-width: 58%
+	max-width: 45%
 	h1
 		display: inline-block
 		font-size: 28px
@@ -672,7 +671,7 @@ p.copyright
 	vertical-align: top
 	margin-top: 11px
 	float: right
-	margin-right: 70px
+	margin-right: 50px
 	.compare__text
 		text-decoration: underline
 	&:hover 
@@ -687,6 +686,7 @@ p.copyright
 	line-height: 28px
 .panel_descr
 	text-align: left
+	position: relative
 	padding: 10px 20px
 	margin-top: 25px
 	border: 2px solid #77282a
@@ -696,7 +696,7 @@ p.copyright
 	margin: 0
 	padding: 0
 .panel__mark_top
-	top: 52px
+	top: -32px
 .icon__small-trips
 	width: 13px
 	height: 10px
@@ -1039,8 +1039,8 @@ p.copyright
 	display: inline-block
 	border-bottom: 2px solid
 	line-height: 0
-	width: 20px
-	height: 5px
+	width: 19px
+	height: 6px
 .slider .rub
 	width: 16px
 	height: 4px
@@ -1162,8 +1162,10 @@ input:focus
 	position: relative
 	float: left
 	margin-bottom: 28px
-.one-catalog-product:nth-of-type(3n)
+.one-catalog-product:nth-child(3n)
 	margin-right: 0
+.one-catalog-product:nth-child(3n-2)
+	clear: left
 .catalog-items__parameters
 	margin-bottom: 20px
 .catalog-thumb
@@ -1505,6 +1507,7 @@ input:focus
 	margin-top: 3px
 	border-bottom: 3px solid $brown
 	background-color: $background
+	vertical-align: top
 .caption-title
 	font-family: $bold
 	font-size: 14px
@@ -2161,3 +2164,16 @@ nav > .open-group
 	padding: 0
 .table
 	font-size: 14px
+.top-button
+	width: 50px
+	height: 50px
+	position: fixed
+	bottom: 100px
+	right: 50%
+	margin-right: -620px
+	background-image: url(../img/icon-button-top.png)
+	background-size: 50px
+	cursor: pointer
+.row-divide
+	clear: both
+	content: ''
