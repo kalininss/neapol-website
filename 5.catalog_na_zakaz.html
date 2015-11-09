@@ -160,7 +160,60 @@
 
 					</div>
 					<div class="row">
-					<div class="col-sm-12 col-md-9 col-md-push-3">
+						<div class="col-sm-12 col-md-3">
+
+							<form class="panel panel_catalog">
+								<div class="panel__mark panel__mark_catalog"></div>
+								<div class="panel__block filter">
+									<h3 class="filter__title">Цена</h3>
+									<div class="filter__price price-range">
+										<div class="price-range__block block__from"><span class="price-range__label">от</span><input name="from" min="150" max="15000" value="150" class="price-range__number" type="number"></div>
+										<div class="price-range__block block__to"><span class="price-range__label">до</span><input name="to" min="150" max="15000" value="15000" class="price-range__number" type="number"></div>
+									</div>
+									<div class="filter__mark news-compact__mark"></div>
+								</div>
+								<div class="panel__block filter">
+									<h3 class="filter__title">Внешняя оболочка</h3>
+									<div class="filter__list">
+										<div class="labeled-checkbox">
+											<input id="cfirst" type="checkbox" name="first" checked hidden />
+											<label for="cfirst" onselectstart="return false" onmousedown="return false">Кремовый</label>
+										</div>
+										<div class="labeled-checkbox">
+											<input id="csecond" type="checkbox" name="second" hidden />
+											<label for="csecond" onselectstart="return false" onmousedown="return false">Марципановая обяжка двойная</label>
+										</div>
+									</div>								
+									<div class="filter__mark news-compact__mark"></div>
+								</div>
+								<div class="panel__block filter">
+									<h3 class="filter__title">Событие</h3>
+									<div class="filter__list">
+										<div class="labeled-checkbox">
+											<input id="cthird" type="checkbox" name="third" checked hidden />
+											<label for="cthird" onselectstart="return false" onmousedown="return false">Свадьба</label>
+										</div>
+										<div class="labeled-checkbox">
+											<input id="cfourth" type="checkbox" name="fourth" hidden />
+											<label for="cfourth" onselectstart="return false" onmousedown="return false">Корпоратив</label>
+										</div>
+										<div class="labeled-checkbox">
+											<input id="cfifth" type="checkbox" name="fifth" hidden />
+											<label for="cfifth" onselectstart="return false" onmousedown="return false">День Рождения</label>
+										</div>
+										<div class="labeled-checkbox">
+											<input id="csixth" type="checkbox" name="sixth" hidden />
+											<label for="csixth" onselectstart="return false" onmousedown="return false">Детский праздник</label>
+										</div>
+									</div>								
+									<div class="filter__mark news-compact__mark"></div>
+								</div>
+								<button class="btn btn_search">Найти</button>
+							</form>
+
+
+						</div>
+						<div class="col-sm-12 col-md-9">
 							
 							<!-- Start catalog-items -->
 							<div class="catalog-items">
@@ -490,59 +543,6 @@
 								</ul>
 								<a href="#" class="pagination__button pagination__button_next">Следующая страница</a>
 							</div>
-						</div>
-						<div class="col-sm-12 col-md-3 col-md-pull-9">
-
-							<form class="panel panel_catalog">
-								<div class="panel__mark panel__mark_catalog"></div>
-								<div class="panel__block filter">
-									<h3 class="filter__title">Цена</h3>
-									<div class="filter__price price-range">
-										<div class="price-range__block block__from"><span class="price-range__label">от</span><input name="from" min="150" max="15000" value="150" class="price-range__number" type="number"></div>
-										<div class="price-range__block block__to"><span class="price-range__label">до</span><input name="to" min="150" max="15000" value="15000" class="price-range__number" type="number"></div>
-									</div>
-									<div class="filter__mark news-compact__mark"></div>
-								</div>
-								<div class="panel__block filter">
-									<h3 class="filter__title">Внешняя оболочка</h3>
-									<div class="filter__list">
-										<div class="labeled-checkbox">
-											<input id="cfirst" type="checkbox" name="first" checked hidden />
-											<label for="cfirst" onselectstart="return false" onmousedown="return false">Кремовый</label>
-										</div>
-										<div class="labeled-checkbox">
-											<input id="csecond" type="checkbox" name="second" hidden />
-											<label for="csecond" onselectstart="return false" onmousedown="return false">Марципановая обяжка двойная</label>
-										</div>
-									</div>								
-									<div class="filter__mark news-compact__mark"></div>
-								</div>
-								<div class="panel__block filter">
-									<h3 class="filter__title">Событие</h3>
-									<div class="filter__list">
-										<div class="labeled-checkbox">
-											<input id="cthird" type="checkbox" name="third" checked hidden />
-											<label for="cthird" onselectstart="return false" onmousedown="return false">Свадьба</label>
-										</div>
-										<div class="labeled-checkbox">
-											<input id="cfourth" type="checkbox" name="fourth" hidden />
-											<label for="cfourth" onselectstart="return false" onmousedown="return false">Корпоратив</label>
-										</div>
-										<div class="labeled-checkbox">
-											<input id="cfifth" type="checkbox" name="fifth" hidden />
-											<label for="cfifth" onselectstart="return false" onmousedown="return false">День Рождения</label>
-										</div>
-										<div class="labeled-checkbox">
-											<input id="csixth" type="checkbox" name="sixth" hidden />
-											<label for="csixth" onselectstart="return false" onmousedown="return false">Детский праздник</label>
-										</div>
-									</div>								
-									<div class="filter__mark news-compact__mark"></div>
-								</div>
-								<button class="btn btn_search">Найти</button>
-							</form>
-
-
 						</div>
 						<!-- End catalog-items -->
 
